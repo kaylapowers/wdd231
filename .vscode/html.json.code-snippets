@@ -1,0 +1,48 @@
+{
+	// Place your WDD231 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"HTML 230 Template": {
+		"prefix": "html230",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"en\">",
+			"<head>",
+			"<meta charset=\"utf-8\">",
+			"<meta name=\"viewport\" content=\"${2:description WDD230 wk 0 assignment}\">",
+			"<title>${2: Title of Site Page}</title>",
+			"meta name=\"author\" content=\"Kayla Powers\">",
+			"<link rel=\"stylesheet\" href=\"styles/${3:filename}\">",
+			"</head>",
+			"<header><h1>${4:PageTitle -Heading 1}</h1> <header>",
+			"<nav> </nav>",
+			"<main> </main>",
+			"<footer>",
+			"<p>&copy<span id=\"{{cYear}}\"></span> .:|:. Web Dev Lab .:|:. KPowers 👉  .:|:. BYU-Idaho</p>",
+			"script src=\"scripts/\"></script>",
+			"</body>",
+			"/html>"
+		],
+		"description": "HTML: Template Base for WDD230 "
+	},
+	"Lazyload Image": {
+		"prefix": "imglazy",
+		"body": [
+			"<img href=\"images/${1: imagefile.png}\" alt=\"${2:Fix ME image}\"  loading=\"lazy\" width=\"${3: 300}\" height=\"${4: 200}\">"
+		],
+		"description": "HTML: Template Base for WDD230 "
+	}
+}
