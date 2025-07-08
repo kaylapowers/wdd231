@@ -1,0 +1,54 @@
+/*media Query for large screen*/
+@media only screen and (min-width: 38rem)
+{
+	* {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	header {
+		grid-template-columns: 24px auto;
+		
+	}
+	.navigation {
+		display: block;
+	}
+	.navigation ul
+	{
+		display: flex;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+
+	p{
+		font-size: larger;
+	}
+	
+	.main-grid
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.h1Grid
+	{
+		grid-column: 1 / span 3;
+	}
+	
+	.coursesNames
+	{
+		grid-template-columns: repeat(3,1fr);
+	}
+	.courseInfoGrid
+	{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 2;
+	}
+	
+
+}

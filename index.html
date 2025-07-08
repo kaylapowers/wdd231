@@ -3,75 +3,119 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Kayla Powers | WDD231 Wk 1 Asst</title>
 	<meta name="author" content="Kayla Powers">
-	<!-- <link rel="stylesheet" href="styles/normalize.css">
-	<link rel="stylesheet" href="styles/mainA.css">
-	<link rel="stylesheet" href="styles/mainA-large.css">
--->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/large.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap"
+		rel="stylesheet">
 </head>
 
-<body>
-
+<main>
 	<header>
-		<!-- <h1>PageTitle -Heading 1</h1>  
-		<img src="images/logo.webp" alt="site logo" width="1" height="1">
-		<span>SiteName</span>
-		<button id="nav-button" class="hamburger" aria-label="navigation"></button>
-	-->
-		<header>
-			<nav id="nav-bar" class="navigation">
+		<img src="images/home.svg" alt="Site Logo" width="512" height="512">
+		<span>Kayla Powers</span>
 
-				<!--<li class="current"><a href="#">Current</a></li> -->
-				<a href="#">Home</a>
-				<a href="#">Chamber Project</a>
-				<a href="#">Final Project</a>
+		<button id="ham-btn" class="hamburger"></button>
+	</header>
+		<!--**************navigation menu ************-->
 
-			</nav>
+	<nav id="nav-bar" class="navigation">
+		<ul>
+			<li class="current"><a href="#">Home</a></li>
+			<li class="chamber"><a href="#">Chamber Project</a></li>
+			<li class="final"><a href="#">Final Project</a></li>
+		</ul>
+	</nav>
+		<!--**************Main- aboutMe Student Photo ************-->
 
-		<main>
-			<h1>KAYLA POWERS | WDD 231</h1>
-			<section class="about-me-cont">
+	<div>
+		<div class="h1Grid">
+			<h1>HOME</h1>
+		</div>
 
-				<section class="about-photo-cont">
-					<h2>WDD231 Student Photo</h2>
-					<!--image of me-->
-					<a><img src="images/profile.webp" width="200" alt="Kayla Powers Photo"></a>
-				</section>
-				<!-- About me 2/3 screen- heading-->
-
+		<div class="main-grid">
+			<!-- Section 1 about me -->
+			<section class="aboutme">
 				<h2>About Me</h2>
-				<p>Born in Twin Falls Idaho. US Air Force veteran. I am retired, but not tired of life yet.</p>
+
+				<p>Born in Twin Falls Idaho. US Air Force veteran. I am retired, but not tired of life yet. More just to make the paragraph bigger. </p>
 			</section>
-			
-			<section class="course-container">
-				<!--ALL/CSE/WDD 
-				<h2>Web Certificate Courses</h2>
-				<h3>All</h3>
 
-				Link to courses
-				<h3>CSE</h3> 
+			<section class="studentPhoto">
+				<h2>Student Photo</h2>
 
-				<h3>WDD</h3>
-
-				 total credits for above-->
-		
+				<a><img src="images/profile.webp" height="auto" alt="Kayla Powers Photo"></a>
 			</section>
-		</main>
-</body>
-<footer>
-	<div class="footer-icons">
-		<!-- 3 conneced icons-->
-
-		<a href="https://www.Github.com"><img src="images\github-icon.svg" width='50'alt="GitHub Icon"></a>
-		<a href="https://www.LinkedIn.com"><img src="images\linkedin-icon.svg"  width="50" alt="LinkedIn Icon"></a>
-		<a href="https://www.facebook.com"><img src="images\facebook-icon.svg" width="50" alt="Facebook"></a>
-		<a href="https://teams.microsoft.com/l/channel/19%3A114bf321544d4b58a1029356cd8e62f7%40thread.tacv2/WDD%20231%20Team%2015%20-%20Fridays%200100%20UTC?groupId=1418a2f1-5c01-4b50-b3b7-f776245d2046&tenantId=42804ae1-d2e9-40b7-a4a3-45811234298b"><img src="images\msteams-icon.svg" width="50" alt="WDD231 MS Teams"></a>
-		<p>Copyright &copy;<span id="copyright-year"></span>  KPowers 👉Idaho USA</p>
-		<p>Last Modified on: <span id="last-modified"></span></p>
-
-		<script src="scripts/date.js"></script>
+		</div>
 	</div>
+
+		<!--**************Web Courses ************-->
+	<h2>Web Certificate Courses</h2>
+
+	<section class="courseInfoGrid">
+		<!--ALL/CSE/WDD -->
+<!--**************Web Courses headers************-->
+		
+		<div class= "all">
+			<h3>All</h3>
+			<div class="coursename", class="allcrs">
+				<h4>CSE110</h4>
+				<h4>WDD130</h4>
+				<h4>WDD131</h4>
+
+			</div>
+		</div>
+
+		<div class="cse">
+			<h3>CSE</h3>
+			<div class="coursename" , class="csecrs">
+				<h4>CSE110</h4>
+			</div>
+		</div>
+
+		<div class="wdd">
+			<h3>WDD</h3>
+			<div class="coursename" , class="wddcrs">
+				<h4>WDD130</h4>
+				<h4>WDD131</h4>
+			</div>
+		</div>
+
+	</section>
+<!--**************credit totals************-->
+			</div>
+				<p> Total credits for above is 6.</p>
+			</div>
+	</main>
+
+<!--**************footer************-->
+
+	<footer>
+		<div class="socialLinks">
+
+			<a href="https://www.Github.com" target="blank"><img src="images/github-icon.svg" width="16" height="16"
+					alt="GitHub Icon"></a>
+			<a href="https://www.LinkedIn.com" target="blank"><img src="images/linkedin-icon.svg" width="16" height="16"
+					alt="LinkedIn Icon"></a>
+			<a href="https://www.facebook.com" target="blank"><img src="images/facebook-icon.svg" width="16" height="16"
+					alt="Facebook"></a>
+			<a href="https://teams.microsoft.com/l/channel/19%3A114bf321544d4b58a1029356cd8e62f7%40thread.tacv2/WDD%20231%20Team%2015%20-%20Fridays%200100%20UTC?groupId=1418a2f1-5c01-4b50-b3b7-f776245d2046&tenantId=42804ae1-d2e9-40b7-a4a3-45811234298b"
+				target="blank"><img src="images/msteams-icon.svg" width="16" height="16" alt="WDD231 MS Teams"></a>
+		</div>
+
+		<div class="copy-dates">
+			<p>Copyright &copy;<span id="copyright-year"></span> KPowers 👉Idaho USA</p>
+			<p>Last Modified on: <span id="last-modified"></span></p>
+		</div>
+	</footer>
+	<script src="scripts/date.js"></script>
+	<script src="scripts/navigation.js"></script>
+</body>
 
 </html>

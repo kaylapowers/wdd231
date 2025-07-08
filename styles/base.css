@@ -1,0 +1,356 @@
+.root
+{
+	/* Med blue #023059
+	 Dk blue #012340 
+	 Darkerblue #224459 
+	 purpleBlue #023859 
+	 AFBlueish #021740 
+	 Lightvlue #3C7DA6 
+	 Ltlt blue #96D2D9 
+	 brtMedBlue #183F8C
+	 Tan #F2E8C9
+	 Peach#D99C79 
+	 Maroon #401201 
+	 Gold #F2A516
+	    GoldGold #F2B749 
+		Goldoroange #F29F05 
+		Red #8C2703 
+		Orangered #A61B1B
+		Dk Red #8C2A3C 
+		RedBrk #8C3028 
+		DarkerBrick #400106 
+		BrtBrickRed #8C281F 
+		Dk Green #0A4859 */
+	--primary-color: #183F8C;
+	/*medium blue bright*/
+	--secondary-color: #023059;
+	/*med blue */
+	--background-color: #F2E8C9;
+	/*tan or  Peach ackgroundColor*/
+	--goldaccent-color: #F2A516;
+	/*Gold Color*/
+	--goldaccent2-color: #F2B749;
+	/*Gold Color*/
+	--header-color: #620c4146;
+	/*light maroon*/
+	--heading-color: #401201;
+	/*backgroundColor*/
+	--button-color: #D99C79;
+	/*backgroundColor*/
+	--textpurpleblue-color: #023859;
+	/*backgroundColor*/
+	--textlightblue-color: #96D2D9;
+	/*backgroundColor*/
+	--bordermain-color: #400106;
+	/*main border*/
+	--border-button-color: ;
+
+	/*backgroundColor*/
+	.rowdies-light
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	.rowdies-regular
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.rowdies-bold
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	.rowdies-light
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+
+	.rowdies-regular
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+	.rowdies-bold
+	{
+		font-family: "Rowdies", sans-serif;
+		font-weight: 700;
+		font-style: normal;
+	}
+
+	/*<weight>: Use a value from 100 to 900
+		// <uniquifier>: Use a unique and descriptive class name
+		*/
+
+	.roboto-100
+	{
+		font-family: "Roboto", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 100;
+		font-style: normal;
+		font-variation-settings:
+			"wdth" 100;
+	}
+
+	.roboto-bolditalic
+	{
+		font-family: "Roboto", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: bold;
+		font-style: italic;
+		font-variation-settings:
+			"wdth" 100;
+	}
+
+	.roboto-400
+	{
+		font-family: "Roboto", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 400;
+		font-style: normal;
+		font-variation-settings:
+			"wdth" 100;
+	}
+
+}
+
+/*******************************color Scheme****************/
+
+
+/******************************Site Wide****************/
+*
+{
+	font-family: sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+h1
+{
+	margin: 0;
+
+}
+
+h2 {
+	text-align: center;		background-color: #09245c;	color: white;
+	margin: 0;
+}
+
+h3
+{
+	text-align: center;
+	background-color: #400106;
+	color: white;
+	margin: 0;
+}
+h4
+{
+	text-align: center;
+	background-color: #ddd;
+	color:#09245c;
+	margin: 5px;
+	padding: 5px;
+	font-size: smaller;
+}
+
+p {
+	color: #040f24;
+	text-align: center;
+	margin: 0;
+	padding: 3px;
+}
+
+/******************************header****************/
+header
+{
+	display: grid;
+	grid-template-columns: 24px auto 44px;
+	padding: 5px 0 5px 10px;
+	column-gap: 8px;
+
+}
+
+header img
+{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+header span
+{
+	color: #09245c;
+	font-size: 1.2rem;
+}
+
+/************HAMBURGER NAVIGATION********/
+.hamburger
+{
+	background: none;
+	border: none;
+	font-size: 2rem;
+	color: #09245c;
+	
+	cursor: pointer;
+	font-family: Verdana, sans-serif;
+}
+
+.hamburger::after
+{
+	content: "\2630";
+}
+
+.hamburger.show::after
+{
+	content: "\00D7";
+}
+
+/************ NAVIGATION********/
+.navigation
+{
+	display: none;
+	background-color: #400106;
+	padding: 2px;
+
+}
+
+.navigation.show
+{
+	display: block;
+}
+
+.navigation ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation a
+{
+	display: block;
+	padding: .8rem 20px;
+	color: white;
+	text-decoration: none;
+	border: #aaa solid 1px;
+}
+
+.navigation a:hover
+{
+	font-size: larger;
+	color: #96D2D9;
+}
+
+/************HOME PAGE********/
+main{
+	background-color: #b2f7fe;
+}
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 8px;
+	place-items: center;
+}
+.h1Grid
+{
+	grid-column: 1;
+	color: #09245c;
+	text-align: center;
+	padding-top: 10px;
+}
+.aboutme {
+margin: 0;
+
+}
+.studentPhoto {
+	background-color: #ccc;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+.studentPhoto img {
+	display: grid;
+	place-items: center;
+	width: 40%;
+	height: auto;
+	margin-left: 30%;
+	padding: 10px;
+
+	
+}
+/**************Web Courses ************/
+.courseInfoGrid {
+	display: grid;
+	grid-template-columns: repeat(3, 30%);
+	grid-gap: 8px;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+.coursename {
+	width: 100%;
+	grid-row: 2;
+	font-size: 75%;
+	text-align: center;
+	order: 1;
+
+}
+
+/**********Final  Project Page********/
+
+
+/************ Footer********/
+
+footer
+{
+	background-color: #ccc;
+	padding: 1rem 10px;
+	text-align: center;
+}
+
+.socialLinks
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.socialLinks a
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border: darkgrey solid 1px;
+	border-radius: 4px;
+}
+
+.socialLinks img
+{
+	width: 33px;
+	height: 33px;
+}
+
+.socialLinks a:hover
+{
+	background-color: #ddd;
+}
+
+.copy-dates
+{
+	color: #09245c;
+	font-size: 8px;
+}
