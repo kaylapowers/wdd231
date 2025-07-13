@@ -117,12 +117,10 @@ function filterSubjects(subject) {
 
 
 function styleCompletedCourses(courseArray, subject) {
-	let totalCredits = 0;
-
 	const cardContainer = document.getElementById('card-container');
 
 	courseArray.forEach(element => {
-		totalCredits += element.credits;
+
 		const cardElement = document.createElement('div');
 		cardElement.classList.add('card');
 
@@ -137,6 +135,14 @@ function styleCompletedCourses(courseArray, subject) {
 
 	});
 	const subjectPara = document.createElement('p');
+	let totalCredits = reduceCredits(courseArray);
 	subjectPara.textContent = `Total credits for above: ${subject} Courses is ${totalCredits}`;
 	cardContainer.appendChild(subjectPara);
+}
+
+function reduceCredits(courseArray) {
+	const totalCredits = courseArray.reduce((accumulator, currentValue) => {
+		return accumulator + currentValue.credits;
+	}, 0);
+	return totalCredits;
 }
