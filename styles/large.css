@@ -12,17 +12,26 @@
 
 	header {
 		grid-template-columns: 24px auto;
+		grid-template-rows: 1;
+
 		
 	}
 	.navigation {
-		display: block;
+		display: grid;
+		width : 100%;
+		margin-top: 5px;
 	}
 	.navigation ul
 	{
 		display: flex;
+		font-size: 1.2rem;
+	
+	}
+	.navigation a {
+		border: #400106 solid 1px;
 	}
 	h1 {
-		font-size: 2rem;
+		font-size: 1.6rem;
 	}
 
 	p{
@@ -50,5 +59,21 @@
 		grid-template-rows: 2;
 	}
 	
-
+		.main-grid
+		{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+		
+		.studentPhoto img
+		{
+			display: grid;
+			place-items: center;
+			width: 60%;
+			height: auto;
+			margin-left: 25%;
+}.copy-dates
+{
+	font-size: smaller;
+}
 }

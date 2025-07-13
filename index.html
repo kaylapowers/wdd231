@@ -16,34 +16,33 @@
 		rel="stylesheet">
 	<script src="scripts/date.js" defer></script>
 	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/course.js" defer></script>
+
 </head>
-
 <body>
-<main>
-	<header>
-		<img src="images/home.svg" alt="Site Logo" width="512" height="512">
-		<span>Kayla Powers</span>
+	
+		<div class="headerGrid">
+			<img src="images/home.svg" alt="Site Logo" width="20" height="20">
+			<span>Kayla Powers</span>
 
-		<button id="ham-btn" class="hamburger"></button>
-	</header>
+			<button id="ham-btn" class="hamburger"></button>
 		<!--**************navigation menu ************-->
 
-	<nav id="nav-bar" class="navigation">
-		<ul>
-			<li class="current"><a href="#">Home</a></li>
-			<li class="chamber"><a href="#">Chamber Project</a></li>
-			<li class="final"><a href="#">Final Project</a></li>
-		</ul>
-	</nav>
-		<!--**************Main- aboutMe Student Photo ************-->
-
-	<div>
-		<div class="h1Grid">
-			<h1>HOME</h1>
+			<nav id="nav-bar" class="navigation">
+				<ul>
+					<li class="current"><a href="#">Home</a></li>
+					<li class="chamber"><a href="#">Chamber Project</a></li>
+					<li class="final"><a href="#">Final Project</a></li>
+				</ul>
+			</nav>
 		</div>
+		<h1>HOME</h1>
+	</header>
 
+			<!--**************Main- aboutMe Student Photo ************-->
+	<main>
 		<div class="main-grid">
-			<!-- Section 1 about me -->
+				<!-- Section 1 about me -->
 			<section class="aboutme">
 				<h2>About Me</h2>
 
@@ -56,46 +55,28 @@
 				<a><img src="images/profile.webp" height="auto" alt="Kayla Powers Photo"></a>
 			</section>
 		</div>
-	</div>
 
-		<!--**************Web Courses ************-->
-	<h2>Web Certificate Courses</h2>
+			<!--**************Web Courses ************-->
 
-	<section class="courseInfoGrid">
+	<section class="courseSect">
+		<h2>Web and Computer Programming Certificate Courses</h2>
+
+		<div class="courseInfoGrid" id="card-container">
 		<!--ALL/CSE/WDD -->
-<!--**************Web Courses headers************-->
+<!--**************Web Courses headers************ -->
+		<div class="cardGrid"> 
+
+		<button class="subjButton" class="all" id="allButton" onclick="">ALL Courses</button>
 		
-		<div class= "all">
-			<h3>All</h3>
-			<div class="coursename", class="allcrs">
-				<h4>CSE110</h4>
-				<h4>WDD130</h4>
-				<h4>WDD131</h4>
+		<button class="subjButton" class="wdd" id="wddButton" onclick="">WDD Courses</button>
 
+		<button class="subjButton" class="cse" id="cseButton" onclick="">CSE Courses</button>
 			</div>
+		<div class= "credits" id="subjectPara"></div>
 		</div>
-
-		<div class="cse">
-			<h3>CSE</h3>
-			<div class="coursename" , class="csecrs">
-				<h4>CSE110</h4>
-			</div>
-		</div>
-
-		<div class="wdd">
-			<h3>WDD</h3>
-			<div class="coursename" , class="wddcrs">
-				<h4>WDD130</h4>
-				<h4>WDD131</h4>
-			</div>
-		</div>
-
 	</section>
-<!--**************credit totals************-->
-			</div>
-				<p> Total credits for above is 6.</p>
-			</div>
-	</main>
+
+	</main> 
 
 <!--**************footer************-->
 
@@ -111,7 +92,7 @@
 			<a href="https://teams.microsoft.com/l/channel/19%3A114bf321544d4b58a1029356cd8e62f7%40thread.tacv2/WDD%20231%20Team%2015%20-%20Fridays%200100%20UTC?groupId=1418a2f1-5c01-4b50-b3b7-f776245d2046&tenantId=42804ae1-d2e9-40b7-a4a3-45811234298b"
 				target="blank"><img src="images/msteams-icon.svg" width="16" height="16" alt="WDD231 MS Teams"></a>
 		</div>
-
+		
 		<div class="copy-dates">
 			<p>Copyright &copy;<span id="copyright-year"></span> KPowers 👉Idaho USA</p>
 			<p>Last Modified on: <span id="last-modified"></span></p>
