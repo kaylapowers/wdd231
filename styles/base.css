@@ -1,26 +1,6 @@
 .root
 {
-	/* Med blue #023059
-	 Dk blue #012340 
-	 Darkerblue #224459 
-	 purpleBlue #023859 
-	 AFBlueish #021740 
-	 Lightvlue #3C7DA6 
-	 Ltlt blue #96D2D9 
-	 brtMedBlue #183F8C
-	 Tan #F2E8C9
-	 Peach#D99C79 
-	 Maroon #401201 
-	 Gold #F2A516
-	    GoldGold #F2B749 
-		Goldoroange #F29F05 
-		Red #8C2703 
-		Orangered #A61B1B
-		Dk Red #8C2A3C 
-		RedBrk #8C3028 
-		DarkerBrick #400106 
-		BrtBrickRed #8C281F 
-		Dk Green #0A4859 */
+
 	--primary-color: #183F8C;
 	/*medium blue bright*/
 	--secondary-color: #023059;
@@ -44,8 +24,6 @@
 	--bordermain-color: #400106;
 	/*main border*/
 	--border-button-color: ;
-
-	/*backgroundColor*/
 
 	.rowdies-light
 	{
@@ -83,7 +61,8 @@
 
 *
 {
-	font-family: sans-serif;
+	font-family: "Rowdies",
+		sans-serif;
 	margin: 0;
 }
 
