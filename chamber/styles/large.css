@@ -1,0 +1,79 @@
+/*media Query for large screen*/
+@media only screen and (min-width: 38rem)
+{
+	* {
+		max-width: 900px;
+		margin: 0 auto;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	header {
+		grid-template-columns: 24px auto;
+		grid-template-rows:  1fr;
+
+		
+	}
+	.navigation {
+		display: grid;
+		width : 100%;
+		margin-top: 5px;
+	}
+	.navigation ul
+	{
+		display: flex;
+		font-size: 1.2rem;
+	
+	}
+	.navigation a {
+		border: #400106 solid 1px;
+	}
+	h1 {
+		font-size: 1.2rem;
+	}
+
+	p{
+		font-size: larger;
+	}
+	
+	.main-grid
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.h1Grid
+	{
+		grid-column: 1 / span 3;
+	}
+	
+	.coursesNames
+	{
+		grid-template-columns: repeat(3,1fr);
+	}
+	.courseInfoGrid
+	{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr 1fr;
+	}
+	
+		.main-grid
+		{
+			display: grid;
+			grid-template-columns: 2fr 1fr;
+		}
+		
+		.studentPhoto img
+		{
+			display: grid;
+			place-items: center;
+			width: 60%;
+			height: auto;
+			margin-left: 25%;
+}.copy-dates
+{
+	font-size: smaller;
+}
+}
