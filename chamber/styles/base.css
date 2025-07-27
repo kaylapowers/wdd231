@@ -335,7 +335,7 @@ section
 
 .hero-section
 {
-	background-image: url('/images/hero-eagle.webp');
+	background-image: url('../images/hero-eagle.webp');
 	background-color: #2a53a4;
 	height: 100vh;
 	background-position: center;
