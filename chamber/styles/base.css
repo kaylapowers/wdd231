@@ -190,8 +190,8 @@ header
 .menu-grid-container
 {
 	display: grid;
-	grid-template-columns: 1fr ;
-	grid-template-areas: 
+	grid-template-columns: 1fr;
+	grid-template-areas:
 		"navigation"
 		"navigation"
 		"navigation"
@@ -447,7 +447,7 @@ caption
 	grid-template-areas:
 		"memberheading"
 		"listgrid";
-		
+
 	place-items: center;
 }
 
@@ -596,7 +596,7 @@ footer
 	display: grid;
 	background-color: #400106;
 	color: white;
-	
+
 	justify-content: center;
 	place-items: center;
 	gap: 5px;
