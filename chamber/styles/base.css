@@ -245,7 +245,7 @@ header
 .navigation li:hover
 {
 	font-size: larger;
-	color: #96D2D9;
+	color: #96d9bf;
 }
 
 .breadcrumb-area
@@ -318,7 +318,7 @@ button:hover
 
 main
 {
-	background-color: #4397a0;
+	background-color: #ccf8fd;
 }
 
 section
@@ -326,14 +326,13 @@ section
 	border: 1px solid rgb(0 0 0 / 20%);
 	width: 100%;
 	height: 100%;
-	background-color: #68eaf9;
+	background-color: #ccf8fd;
 
 }
 
 .hero-section
 {
 	background-image: url('../images/hero-eagle.webp');
-	background-color: #2a53a4;
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -424,6 +423,7 @@ figure
 	border: 2px solid black;
 	text-align: center;
 	margin: 2px;
+	background-color: white;
 
 }
 
@@ -437,7 +437,7 @@ caption
 {
 	font-style: normal;
 	font-family: 'Crimson Pro', serif;
-	font-size: 56px;
+	font-size: 32px;
 }
 
 .members
@@ -526,7 +526,6 @@ li
 	width: 100%;
 	overflow: hidden;
 	list-style: none;
-	padding-bottom: 10px;
 }
 
 .list-item h4
@@ -547,7 +546,8 @@ li
 .list-item p
 {
 	font-style: normal;
-	font-size: smaller;
+	font-size: x-small;
+	padding: 40px;
 }
 
 .caption
