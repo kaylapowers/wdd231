@@ -191,7 +191,8 @@ header
 {
 	display: grid;
 	grid-template-columns: 1fr ;
-	grid-template-areas: "navigation"
+	grid-template-areas: 
+		"navigation"
 		"navigation"
 		"navigation"
 		"navigation"
@@ -382,43 +383,41 @@ section
 	display: grid;
 	place-items: center;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(8, auto);
+
+
 	grid-template-areas:
-		".events"
-		".seminars"
-		".seminars"
+		"events"
+		"seminarhead"
+		"seminars"
 		"nethead"
-		" networks"
+		"networks"
 		"areaweather"
 		"cur-weath-head"
 		"cur-weath"
 		"forcst-head";
 }
 
-.events h2
-{
-	grid-area: "eventhead";
-}
+
 
 .seminars h3
 {
-	grid-area: "seminarhead";
+	grid-area: seminarhead;
 }
 
 .seminars
 {
-	grid-area: "seminars";
+	grid-area: seminars;
 }
 
 .network h3
 {
-	grid-area: "nethead";
+	grid-area: nethead;
 }
 
 .network
 {
-	grid-area: "networks";
-}
+	grid-area: networks;
+}*/
 
 figure
 {
@@ -448,18 +447,19 @@ caption
 	grid-template-areas:
 		"memberheading"
 		"listgrid";
+		
 	place-items: center;
 }
 
 .mem-head
 {
-	grid-area: "memberheading";
+	grid-area: memberheading;
 	width: 100%;
 }
 
 .lst-grd
 {
-	grid-area: "listgrid";
+	grid-area: listgrid;
 	list-style: none;
 	width: 100%;
 	display: flex;
@@ -566,27 +566,27 @@ li
 
 .weather h2
 {
-	grid-area: "areaweather";
+	grid-area: areaweather;
 }
 
 .currWeath h3
 {
-	grid-area: "cur-weath-head";
+	grid-area: cur-weath-head;
 }
 
 .currWeath
 {
-	grid-area: "cur-weath";
+	grid-area: cur-weath;
 }
 
 .weathForcast h3
 {
-	grid-area: "forcst-head";
+	grid-area: forcst-head;
 }
 
 .weathForcast
 {
-	grid-area: "forcast";
+	grid-area: forcast;
 }
 
 /************ Footer********/
@@ -596,10 +596,7 @@ footer
 	display: grid;
 	background-color: #400106;
 	color: white;
-	grid-template-areas: "contact"
-		"social"
-		"proj"
-		"copy";
+	
 	justify-content: center;
 	place-items: center;
 	gap: 5px;
@@ -609,13 +606,11 @@ footer
 
 .chamberContact p
 {
-	grid-area: "contact";
 	color: white;
 }
 
 .socialLinks
 {
-	grid-area: "social";
 	display: flex;
 	flex-direction: row;
 	padding: 0 20px;
@@ -653,7 +648,6 @@ footer
 
 .projBy p
 {
-	grid-area: "proj";
 	color: white;
 }
 
@@ -664,6 +658,5 @@ footer
 
 .copy-dates p
 {
-	grid-area: "copy";
 	color: white;
 }
