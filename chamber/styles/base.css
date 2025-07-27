@@ -417,7 +417,7 @@ section
 .network
 {
 	grid-area: networks;
-}*/
+}
 
 figure
 {
@@ -636,7 +636,7 @@ footer
 {
 	width: 100%;
 	height: 100%;
-	margin-right: 5;
+	margin-right: 5px;
 }
 
 .socialLinks a:hover
