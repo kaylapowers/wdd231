@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => { // Ensure DOM is loaded
 			const gridItem = document.createElement('div');
 			gridItem.classList.add('grid-item');
 			gridItem.innerHTML = `
-				<h4>${member.businessName}</h4>
+				<h2>${member.businessName}</h2>
 				<p>${member.imageName}</p>
 
 				<p class='caption'> ${member.caption}</p>
