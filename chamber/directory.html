@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eagle City Chamber of Commerce Business Directory</title>
+	<meta name="author" content="Kayla Powers">
+	<meta name="description"
+chamber		content="Eagle City, Chamber of Commerce web site,chamberkeynote, Network,Business Support, Economic Development, Community Support, Idaho, Boise">
+	<!--*********************Styles and icons*************************************-->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/large.css">
+	<link rel="icon" href="favicon.ico">
+	<!--*********************facebook meta *************************************-->
+
+	<meta property="og:title" content="Eagle City Chamber of Commerce Business Directory Page">
+	<meta property="og:url" content="https://kaylapowers.github.io/wdd231/chamber/directory.html">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Eagle City Chamber of Commerce">
+	<meta property="og:description"
+		content="Eagle City Chamber of Commerce web site. Economic Development, Community Support, Idaho, Boise">
+	<meta property="og:image" content="https://github.com/kaylapowers/wdd231/chamber/images/chamberfacebook.webp">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:image:alt" content="Eagle City Chamber of Commerce Website">
+	<!--*********************Google Fonts*************************************-->
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wdth,wght@0,18..144,112,300..900;1,18..144,112,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+
+	<!--*********************Scripts *************************************-->
+
+	<script src="scripts/breadcrumbs.js" defer></script>
+	<script src="scripts/date.js" defer></script>
+	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/members.js" defer></script>
+</head>
+<!--*********************Body*************************************-->
+
+<body>
+	<!--*********************Header- on every page***********************************-->
+	<header>
+		<div class="logohead-grid-container">
+			<div class="logo-area">
+
+				<img src="images/eagle-logo.webp" alt="Site Logo" width="50" height="50">
+			</div>
+
+			<div class="heading-area">Welcome To Eagle City Chamber of Commerce</div>
+
+			<!--*********************Navigation*************************************-->
+			<div class="hamburger-area">
+				<button class="hamburger" id="hamb-btn"></button>
+			</div>
+		</div>
+		<!--**************navigation menu ************-->
+
+		<div class="menu-grid-container">
+			<nav class="navigation" id="nav-bar">
+				<ul>
+					<li><a href="#">Discover</a></li>
+					<li class="active"><a href="#">Directory</a></li>
+					<li><a href="#">Join</a></li>
+					<li><a href="#">Home</a></li>
+				</ul>
+			</nav>
+			<!--*********************Breadcrumb-Nav*************************************-->
+			<div class="breadcrumb-area">
+				<nav aria-label="breadcrumb" class="breadcrumb">
+					<ol>
+						<li id="breadcrumb">
+						</li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	</header>
+
+	<!--**************Main- ************-->
+	<main>
+		<section class="main-content">
+			<div class="hero-section">
+				<div class="hero-content">
+					<h1 class="page-title">Business Directory Page</h1>
+					<!--	<img src="images/heroeagle.webp" width="900" height="450" alt="Eagle City Chamber of Commerce Website"
+						class="hero-banner"> -->
+					<p class="hero-para">GREAT MEMBERS THANK YOU!</p>
+					<button class="hero-overlay-button">Keynote Tickets</button>
+				</div>
+			</div>
+
+			<div class="main-grid">
+
+				<section class="events">
+					<h2>Events</h2>
+
+					<div class="seminars">
+						<h3>Seminars</h3>
+
+						<figure><img src="images/classes-event.webp" height="122" width="220"
+								alt=">NEW CLASS: It's Not Done 'Till The Paperwork Is Dry">
+							<figcaption>NEW CLASS: "It's Not Done 'Till The Paperwork Is Dry"</figcaption>
+						</figure>
+
+						<figure><img src="images/hair-business2.webp" height="200" width="300"
+								alt="Web Development 101">
+							<figcaption>Feb 18, 2025 -- Web Development 101</figcaption>
+						</figure>
+					</div>
+
+					<div class="network">
+						<h3>Business Networking</h3>
+
+						<figure><img src="images/semin-event2.webp" height="200" width="300"
+								alt="Breakfast with Partners">
+							<figcaption>Breakfast With Partners</figcaption>
+						</figure>
+
+						<figure><img src="images/jonies-bakery1.webp" height="200" width="208" alt="Jonies Bakery">
+							<figcaption>Jonies Bakery</figcaption>
+						</figure>
+					</div>
+				</section>
+				<!--Link to Eagle Event Calendar-->
+				<section class="weather">
+					<h2>AREA WEATHER</h2>
+
+					<div class="currWeath">
+						<h3>Current Weather</h3>
+						<div class="weather1Content">
+							<p>this will be current weather</p>
+							<!--Link to Current Weather-->
+						</div>
+					</div>
+
+					<div class="weath-forcast">
+						<h3>Weather Forcast</h3>
+						<div class="weather-forcast">
+							<p>this will be forcast weather</p>
+							<!--Link weather forcast-->
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<section class="members">
+				<h2 class="mem-head">Membership Directory</h2>
+
+				<div class="lst-grd">
+					<button id="gridViewBtn" class="grid-btn"><img src="images/grid1.svg" alt="GRID View Membership"
+							width="44" height="44"></button>
+					<button id="listViewBtn" class="list-btn"><img src="images/list1.svg" alt="List View Membership"
+							width="44" height="44"></button>
+				</div>
+
+				<div id="dataContainer" class="grid-container"></div>
+			</section>
+		</section>
+
+	</main>
+
+	<!--**************footer************-->
+	<footer class="footer-container">
+
+		<!--**************footer social links************-->
+		<div class="chamberContact">
+			<p>148 N 2nd St</p>
+			<p> Eagle, ID 83616</p>
+			<p>(208) 939-4222 </p>
+		</div>
+
+		<span class="socialLinks">
+			<a href="https://www.LinkedIn.com" target="blank"><img src="images/linkedin-icon1.svg" width="45"
+					height="45" alt="LinkedIn Icon"></a>
+			<!--twitter X-->
+			<a href="https://www.twitter.com" target="blank"><img src="images/twitter-logo1.svg" width="45" height="45"
+					alt="twitter-X"></a>
+			<!--YouTube-->
+
+			<a href="https://www.youtube.com" target="blank"><img src="images/youtube-logo1.svg" width="45" height="45"
+					alt="youTube"></a>
+		</span>
+
+		<div class="projBy">
+			<p>Class project</p>
+			<p>WDD231 Chamber</p>
+		</div>
+
+		<div class="copy-dates">
+			<p>Copyright: <span id="copyright-year"></span>
+			<p>Kayla Powers 👉Idaho USA</p>
+			<p>Last Modified on:<span id="last-modified"></span></p>
+		</div>
+
+	</footer>
+</body>
+
+</html>
