@@ -13,7 +13,6 @@
 .body-font
 {
 	font-family: "Roboto", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 100;
 	font-style: normal;
 	font-variation-settings:
@@ -24,7 +23,6 @@
 .heading-font
 {
 	font-family: "Roboto Slab", serif;
-	font-optical-sizing: auto;
 	font-weight: bold;
 	font-style: normal;
 }
@@ -32,7 +30,6 @@
 .text2-font
 {
 	font-family: "Merriweather", serif;
-	font-optical-sizing: auto;
 	font-weight: 200;
 	font-style: normal;
 	font-variation-settings:
@@ -42,7 +39,6 @@
 .important
 {
 	font-family: "Merriweather Sans", sans-serif;
-	font-optical-sizing: auto;
 	font-weight: 300;
 	font-style: normal;
 }
@@ -194,7 +190,7 @@ header
 .menu-grid-container
 {
 	display: grid;
-	grid-template-columns: 1;
+	grid-template-columns: 1fr ;
 	grid-template-areas: "navigation"
 		"navigation"
 		"navigation"
@@ -388,9 +384,9 @@ section
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(8, auto);
 	grid-template-areas:
-		"eventhead"
-		"seminarhead"
-		"seminars"
+		".events"
+		".seminars"
+		".seminars"
 		"nethead"
 		" networks"
 		"areaweather"
