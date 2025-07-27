@@ -23,6 +23,7 @@ function generateBreadcrumbs(path) {
 		if (i === pathParts.length - 1) { // Current page
 			listItem.textContent = decodeURIComponent(part).replace(/-/g, ' ').replace('.html', '').toUpperCase();
 			listItem.setAttribute('aria-current', 'page');
+			listItem.className = "current";
 		} else {
 			listItem.innerHTML = `<a href="${currentPath}">${decodeURIComponent(part).replace(/-/g, ' ').replace('.html', '').toUpperCase()}</a>`;
 		}
