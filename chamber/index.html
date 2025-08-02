@@ -81,7 +81,7 @@
 		<div class="breadcrumb-area">
 			<nav aria-label="navigation" class="breadcrumb">
 				<ol>
-					<li id="breadcrumb" aria-label="breadcrumb">
+					<li id="breadcrumb">
 					</li>
 				</ol>
 			</nav>
@@ -98,7 +98,7 @@
 
 		<!--**************Main-Content ************-->
 
-		<section class="main-content">
+		<div class="main-content">
 
 			<section class="events">
 				<h2>Events</h2>
@@ -106,46 +106,64 @@
 				<div class="seminars">
 					<h3>Seminars</h3>
 
-					<div><a class="imageright"><img src="images/event1.webp" height="169" width="300" alt="NEW CLASS: It's Not Done 'Till The Paperwork Is Dry"></a>
+					<div><a class="imageright"><img src="images/event1.webp" height="169" width="300"
+								alt="NEW CLASS: It's Not Done 'Till The Paperwork Is Dry"></a>
 						<p class="caption">Jan 31, 2025 -- NEW CLASS: It's Not Done 'Till The Paperwork Is Dry</p>
-						<div>
-							<a class="imageleft"><img src="images/classes1.webp" height="200" width="300"
-									alt="Web Development 101"></a>
-							<p class="caption">Feb 18, 2025 -- Web Development 101</p>
-						</div>
 					</div>
-					<!--**************seminars ************-->
-						<h3>Business Networking</h3>
 
-					<div class="networkgrid">
+					<div><a class="imageleft"><img src="images/classes1.webp" height="200" width="300"
+								alt="Web Development 101"></a>
+						<p class="caption">Feb 18, 2025 -- Web Development 101</p>
+					</div>
+				</div>
 
-						<div class="network1"><a><img src="images/breakfast1.webp" height="169" width="300"
-									alt="Breakfast with Partners"></a>
-							<p class="caption1">Breakfast With Partners</p>
+				<!--**************seminars ************-->
+
+				<div class="networkgrid">
+					<h3>Business Networking</h3>
+
+					<div class="network1"><a><img src="images/breakfast1.webp" height="169" width="300" alt="Breakfast with Partners"></a>
+						<p class="caption1">Breakfast With Partners</p>
 
 						<div class="captionpara">
 							<p class="caption1p">Network with fellow business owners, professionals, and potential
 								workers at our monthly breakfast update!</p>
-							</div>
 						</div>
 					</div>
+
+						<div class="network1"><a><img src="https://picsum.photos/200/300?random=2.webp" height="200" width="300" alt="Eagle City"></a>
+							<p class="caption1">Eagle City</p>
+						</div>
+
+						<div class="network1"><a><img src="https://picsum.photos/200/300?random=1.webp" height="200" width="300" alt="Eagle City"></a>
+								<p class="caption1">Awesome Eagle City</p>
+							</div>
+
+						<div class="network1"><a><img src="https://picsum.photos/200/300?random=3.webp" height="200" width="300" alt="Eagle City"></a>
+									<p class="caption1">At Home in Eagle City</p>
+								
+								</div>
+
+						<div class="network1"><a><img src="https://picsum.photos/200/300?random=4.webp" height="200" width="300"
+												alt="Eagle City"></a>
+										<p class="caption1">Visits are Great! in Eagle City</p>
+									
+						</div>
 				</div>
-
+					
 					<div class="advertise1">
-						<a class="adpic1"><img src="images/joniesbakery.webp" height="169" width="300" alt="Jonies Bakery">
-
-
-					<p class="adcaption1">Jonies Bakery</p>
-					<p class="adpara1">Jonie is up way before sunrise to bake wonderful goodies to start your
-						day with.
-						Great coffee and pastry till 3PM.</p>
-
-					</div>
-
-						<!--**************network ************-->
-
-
+					<h3>Advertisement</h3>
+						
+						<a class="adpic1"><img src="images/joniesbakery.webp" height="169"
+								width="300" alt="Jonies Bakery"></a>
+						<p class="adcaption1">Jonies Bakery</p>
+						<p class="adpara1">Jonie is up way before sunrise to bake wonderful goodies to start your day
+							with. Great coffee and pastry till 3PM.</p>
+				</div>
 			</section> <!--**************events ************-->
+
+
+
 			<!--**************weather ************-->
 			<aside class="weather">
 				<h2>Weather for <span id="city"></span></h2>
@@ -155,7 +173,7 @@
 					<h4>Current as of: <span id="dateTime" class="dateTime"></span></h4>
 
 					<figure>
-						<img id="weatherIcon" class="weatherIconC" src="" alt="">
+						<img id="weatherIcon" class="weatherIconC" src="images/none.svg" alt="dynamic load">
 						<figcaption></figcaption>
 					</figure>
 					<p>Weather Description: <span id="description" class="description"></span></p>
@@ -177,7 +195,7 @@
 						<h3>Forecast Date: <span id="dateTimef" class="dateTimef"></span></h3>
 
 						<figure>
-							<img id="weatherIconf" src="" alt="">
+							<img id="weatherIconf" src="/images/none.svg" alt="dynamic load">
 							<figcaption></figcaption>
 						</figure>
 						<p>Weather Description: <span id="descriptionf" class="description"></span></p>
@@ -193,7 +211,7 @@
 						<h3>Forecast Date: <span id="dateTimef1" class="dateTimef"></span></h3>
 
 						<figure>
-							<img id="weatherIconf1" src="" alt="">
+							<img id="weatherIconf1" src="images/none.svg" alt="dynamic load">
 							<figcaption></figcaption>
 						</figure>
 						<p>Weather Description: <span id="descriptionf1" class="description"></span></p>
@@ -210,7 +228,7 @@
 						<h3>Forecast Date: <span id="dateTimef2" class="dateTimef"></span></h3>
 
 						<figure>
-							<img id="weatherIconf2" src="" alt="">
+							<img id="weatherIconf2" src="images/none.svg" alt="dynamic load">
 							<figcaption></figcaption>
 						</figure>
 						<p>Weather Description: <span id="descriptionf2" class="description"></span></p>
@@ -226,7 +244,6 @@
 			<!--**************weather ************-->
 
 
-		</section> <!--**** main-content ******-->
 		<section class="memberSO">
 			<h2 class="mem-head">Member Business Shout-Outs:</h2>
 			<!--*********member shout out mrmberShout.js***************-->
@@ -234,30 +251,13 @@
 
 				<div id="membHeading" class="membHead">
 
-					<div id="membIcon" class="membImage">
-					</div>
-					<div id="soContentArea" class="soContent">
+					<div id="membIcon" class="membImage"></div>
 
-					</div>
-
-					<!-- <div class='grid-item'> 
-			//inner-HTML
-			<h3>${member.businessName}</h3>
-			<p>${member.imageName}</p>
-			
-			<p class='caption'> ${member.caption}</p>
-			<p class='address'> ${member.street}</p>
-			<p class='address'> ${member.city}, ${member.state} ${member.zipcode}</p>
-			
-			<p class="phone">${member.phoneNumber}</p>
-			<p class="email">${member.email}</p>
-			<p class='url'>${member.webUrl}</p>
-		</div>
-		-->
+					<div id="soContentArea" class="soContent"></div>
 				</div>
-
-		</section>
-
+			</div>
+		</section> <!--**** main-content ******-->
+	</div>
 	</main>
 
 	<!--**************footer************-->
