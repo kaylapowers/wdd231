@@ -3,7 +3,7 @@
 	/*******************************color Scheme****************/
 	--button-color: #F2E8C9;
 	--button-color-2: #183F8C;
-	--secondary-color: #0d2350 ;
+	--secondary-color: #0d2350;
 	--background-color: #96D2D9;
 	--primary-color: #400106;
 	--goldaccent-color: #F2B749;
@@ -267,7 +267,7 @@ header
 	align-items: center;
 	list-style: none;
 	padding: 0;
-	color:#0d2350;
+	color: #0d2350;
 	width: 100%;
 	margin: 0;
 }
@@ -333,22 +333,24 @@ main
 }
 
 section
-	
-		{
+{
 	border: #400106 solid 1px;
 	width: 100%;
 	height: 100%;
 	background-color: #68eaf9;
 }
-.weather {
+
+.weather
+{
 	border-top: white solid 2px;
 	border-bottom: white solid 2px;
 	margin: 5px;
 	width: 100%;
 }
+
 .hero-section
 {
-	background-image: url('../images/heroeaglegood.webp');
+	background-image: url('../images/heroeagle.webp');
 	height: 100vh;
 	width: 100%;
 
@@ -395,10 +397,14 @@ section
 	margin-right: 50px;
 
 }
-.main-content {
+
+.main-content
+{
 	width: 100%;
 }
-.events {
+
+.events
+{
 	text-align: center;
 
 }
@@ -414,9 +420,11 @@ section
 	grid-area: seminarhead;
 	margin: 5px 0;
 }
-.events img {
+
+.events img
+{
 	padding: 20px;
-	border:#610109 solid 3px;
+	border: #610109 solid 3px;
 	background-color: white;
 }
 
@@ -501,9 +509,12 @@ li
 {
 	list-style: none;
 }
-.membImage {
+
+.membImage
+{
 	margin: 5px;
 }
+
 .grid-item
 {
 	background-color: #F2E8C9;
@@ -517,14 +528,17 @@ li
 	grid-gap: 5px;
 	margin-top: 5px;
 }
-.shout {
+
+.shout
+{
 	margin: 10px;
 	padding: 5px;
 }
+
 .grid-item img
 {
 	margin-top: 15px;
-	margin-left : 30px;
+	margin-left: 30px;
 	text-align: center;
 }
 
@@ -538,19 +552,23 @@ li
 .list-item p
 {
 	font-style: normal;
-	
+
 }
+
 .grid-item p
 {
 	font-style: normal;
 	text-align: center;
 
 }
-.captionm{
+
+.captionm
+{
 	font-size: large;
 	font-style: italic;
 	color: #183F8C;
 }
+
 .caption
 {
 	font-family: Helvetica, sans-serif;
@@ -563,8 +581,9 @@ li
 	font-family: Helvetica, sans-serif;
 	color: #183F8C;
 	font-style: italic;
-	border-bottom:#400106 solid 2px;
+	border-bottom: #400106 solid 2px;
 }
+
 .address
 {
 	font-style: normal;
