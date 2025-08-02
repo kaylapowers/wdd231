@@ -3,7 +3,7 @@
 	/*******************************color Scheme****************/
 	--button-color: #F2E8C9;
 	--button-color-2: #183F8C;
-	--secondary-color: #620c4146;
+	--secondary-color: #0d2350 ;
 	--background-color: #96D2D9;
 	--primary-color: #400106;
 	--goldaccent-color: #F2B749;
@@ -56,12 +56,11 @@
 
 *
 {
-	font-family: var(--text2-font),
+	font-family: Roboto,
 		sans-serif;
 	margin: 0;
 	max-width: 900px;
 }
-
 
 h1,
 h2,
@@ -70,22 +69,25 @@ h4,
 h5,
 h6
 {
-	font-family: var(--header-font), serif;
+	font-family: "Roboto", serif;
 	margin: 0;
 	text-align: center;
-	background-color: white;
+	background-color: #0d2350;
+	color: white;
 }
+
 h1
 {
 	font-size: 1.1em;
-	background-color: #400106;
 	color: white;
+	padding: 5px;
 }
 
 h2
 {
 	font-size: 1.0em;
-	background-color:#fccb39 ;
+	background-color: #fccb39;
+	margin: 10px;
 }
 
 h3
@@ -93,12 +95,13 @@ h3
 	font-size: .7em;
 	background-color: #400106;
 	color: white;
+	padding: 2px;
 }
 
 
 p
 {
-	color: #040f24;
+	color: #0d2350;
 	text-align: center;
 	margin: 0;
 	padding: 3px;
@@ -107,6 +110,7 @@ p
 body
 {
 	font-size: .8em;
+	width: 100%;
 }
 
 /******************************header****************/
@@ -138,13 +142,6 @@ header
 	width: 100%;
 	max-width: 55px;
 	height: auto;
-}
-
-.logo-area img
-{
-	width: 100%;
-	height: 100%;
-	object-fit: contain;
 }
 
 .heading-area
@@ -202,8 +199,7 @@ header
 		"navigation"
 		"navigation"
 		"navigation"
-		"navigation"
-		"breadcrumb";
+		"navigation";
 	width: 100%;
 	align-items: center;
 }
@@ -257,10 +253,12 @@ header
 
 .breadcrumb-area
 {
-	margin-left: 5px;
 	grid-area: breadcrumb;
 	align-items: center;
-	padding: 5px;
+	padding: 3px;
+	background-color: white;
+	width: 100%;
+
 }
 
 .breadcrumb ol
@@ -269,20 +267,25 @@ header
 	align-items: center;
 	list-style: none;
 	padding: 0;
-
+	color:#0d2350;
+	width: 100%;
+	margin: 0;
 }
 
 .breadcrumb li
 {
 	display: inline;
-	font-size: .8em;
+	font-size: .9em;
+	color: #0d2350;
+	margin-left: 5px;
 }
 
 .breadcrumb li:not(:last-child)::after
 {
 	display: inline;
-	color: #bdd2fd;
-	content: " → ";
+	color: #0d2350;
+	padding: 0 4px;
+	content: " ׂ╰┈➤";
 
 }
 
@@ -294,7 +297,6 @@ header
 .breadcrumb li a:hover
 {
 	color: #5bd1f5;
-	text-decoration: underline;
 	cursor: pointer;
 	font-size: larger;
 }
@@ -302,7 +304,6 @@ header
 .breadcrumb li[aria-current="page"]
 {
 	font-weight: bold;
-	color: #2a53a4;
 }
 
 button
@@ -326,21 +327,31 @@ button:hover
 main
 {
 	background-color: #ccf8fd;
+	width: 100%;
+	height: 100%;
+
 }
 
 section
-{
-	border: 1px solid rgb(0 0 0 / 20%);
+	
+		{
+	border: 1px solid rgba(#400106, 0.306);
 	width: 100%;
 	height: 100%;
-	background-color: #ccf8fd;
-
+	background-color: #68eaf9;
 }
-
+.weather {
+	border-top: white solid 2px;
+	border-bottom: white solid 2px;
+	margin: 5px;
+	width: 100%;
+}
 .hero-section
 {
-	background-image: url('../images/hero-eagle.webp');
+	background-image: url('../images/heroeaglegood.webp');
 	height: 100vh;
+	width: 100%;
+
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -348,25 +359,30 @@ section
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	background-color: #96D2D9;
+}
 
+.hero-content
+{
+	font-size: 1.6em;
+	z-index: 1;
 }
 
 .hero-content h1
 {
-	font-size: 3em;
-	margin-bottom: 50px;
+	font-size: 1.6em;
 }
 
 .hero-content p
 {
-	font-size: 1.2em;
-	margin-bottom: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	color: white;
+	margin: 20px 0;
 }
 
-.hero-overlay-button
+.heroButton
 {
-	position: absolute;
-	z-index: 1;
+
 	/* Ensures the button is above the image */
 	/* semi-transparent background */
 	background-color: rgba(0, 0, 255, 0.7);
@@ -376,68 +392,32 @@ section
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 1em;
+	margin-right: 50px;
 
 }
-
-/************** ************/
-
-.main-grid
-{
+.main-content {
 	width: 100%;
-	box-sizing: border-box;
-	grid-gap: 2px;
-	display: grid;
-	place-items: center;
-	grid-template-columns: 1fr;
+}
+.events {
+	text-align: center;
 
-
-	grid-template-areas:
-		"events"
-		"seminarhead"
-		"seminars"
-		"nethead"
-		"networks"
-		"areaweather"
-		"cur-weath-head"
-		"cur-weath"
-		"forcst-head";
 }
 
-
+.events h2
+{
+	grid-area: eventhead;
+	margin: 5px 0;
+}
 
 .seminars h3
 {
 	grid-area: seminarhead;
+	margin: 5px 0;
 }
-
-.seminars
-{
-	grid-area: seminars;
-}
-
-.network h3
-{
-	grid-area: nethead;
-}
-
-.network
-{
-	grid-area: networks;
-}
-
-figure
-{
-	border: 2px solid black;
-	text-align: center;
-	margin: 2px;
+.events img {
+	padding: 20px;
+	border:#610109 solid 3px;
 	background-color: white;
-
-}
-
-figure img
-{
-	width: 300px;
-	height: auto;
 }
 
 caption
@@ -451,14 +431,14 @@ caption
 {
 	display: grid;
 	width: 100%;
+	grid-template-columns: .5fr 1fr;
 	grid-template-areas:
-		"memberheading"
-		"listgrid";
+		"memberheading memberheading"
+		"membimg listgrid";
 
-	place-items: center;
 }
 
-.mem-head
+.membership-title
 {
 	grid-area: memberheading;
 	width: 100%;
@@ -521,27 +501,21 @@ li
 {
 	list-style: none;
 }
-
+.membImage {
+	margin: 5px;
+}
 .grid-item
 {
 	background-color: #F2E8C9;
-	border: 1px solid #040f24;
 	margin: 5px;
 	border-radius: 8px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3),
 		-2px -2px 5px rgba(255, 0, 0, 0.3);
 	width: 100%;
 	overflow: hidden;
-	list-style: none;
+	font-size: x-small;
 }
 
-.list-item h4
-{
-	padding: 5px 0;
-	border: 1px solid #040f24;
-	list-style: none;
-	text-decoration: none;
-}
 
 .list-item img
 {
@@ -553,47 +527,27 @@ li
 .list-item p
 {
 	font-style: normal;
-	font-size: x-small;
-	padding: 40px;
+	
 }
 
 .caption
 {
-	border-bottom: 2px solid white;
 	font-family: Helvetica, sans-serif;
 	color: #183F8C;
 	font-style: italic;
 }
 
+.listcaption
+{
+	font-family: Helvetica, sans-serif;
+	color: #183F8C;
+	font-style: italic;
+	border-bottom:#400106 solid 2px;
+}
 .address
 {
 	font-style: normal;
 	text-align: center;
-}
-
-.weather h2
-{
-	grid-area: areaweather;
-}
-
-.currWeath h3
-{
-	grid-area: cur-weath-head;
-}
-
-.currWeath
-{
-	grid-area: cur-weath;
-}
-
-.weathForcast h3
-{
-	grid-area: forcst-head;
-}
-
-.weathForcast
-{
-	grid-area: forcast;
 }
 
 /************ Footer********/
@@ -619,12 +573,8 @@ footer
 .socialLinks
 {
 	display: flex;
-	flex-direction: row;
-	padding: 0 20px;
 	margin: 5px;
 	align-items: center;
-	border: #aaa solid 1px;
-	background-color: rgb(0 0 0 / 40%);
 }
 
 .socialLinks a
@@ -660,7 +610,7 @@ footer
 
 .projBy p:last-child
 {
-	border-right: #aaa solid 1px;
+	border-bottom: #aaa solid 1px;
 }
 
 .copy-dates p

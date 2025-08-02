@@ -1,0 +1,27 @@
+/* CSS */
+.weatherInfo
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.ccard,
+.fcard
+{
+	border: 1px solid #770303;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+	background-color: #beb69b;
+}
+
+
+
+.weatherIcon
+{
+	max-width: 100px;
+	height: auto;
+
+}

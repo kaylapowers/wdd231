@@ -3,7 +3,7 @@
 {
 	*
 	{
-		max-width: 900px;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
 
@@ -106,26 +106,109 @@
 		font-size: larger;
 	}
 
-	.main-grid
+	.main-content
 	{
-		grid-template-columns: 2fr 1fr;
+		display: grid;
+		grid-template-columns:  2fr 1fr;
 		grid-template-areas:
-			"eventhead eventhead"
-			"seminarhead  nethead"
-			"seminars  networks"
-			"areaweather areaweather"
-			"cur-weath-head forcst-head"
-			"cur-weath forcst";
+			"eventhead areaweath"
+			"seminarhead  current-weather"
+			"seminars   forcast-weather"
+			"networkgrid networkgrid";
+		
 		grid-gap: 15px;
+		text-align: left;
 	}
+.events h2
+{
+	grid-area: eventhead;
+	width: 100%;
+	margin: 5px 0;
+}
+.weather h2
+{
+	grid-area: areaweather;
+}
 
+.currWeath h3
+{
+	grid-area: cur-weath-head;
+}
+
+.currWeath
+{
+	grid-area: cur-weath;
+}
+
+.weathForcast h3
+{
+	grid-area: forcst-head;
+}
+
+.weathForcast
+{
+	grid-area: forcast;
+}
+.seminars h3
+{
+	grid-area: seminarhead;
+	margin: 5px 0;
+}
+
+
+.seminars
+{
+	grid-area: seminars;
+	margin: auto;
+}
+
+.networkgrid
+{
+	grid-area: networkgrid;
+	display: grid;
+	grid-template-columns: .5fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "networkhead networkhead"
+		"networkevent1 .caption1p"
+		"advertise1 ."
+		". image2 ";
+		margin: 15px;
+		gap: 15px;
+}
+.network h3 {
+	grid-area: networkhead;
+	width: 100%;
+}
+.caption1 {
+	color: black;
+	font-style: italic;
+	font-weight: 900;
+}
+.netevent1 {
+	grid-area: networkevent1;
+	width: 100%;
+
+}
+.advertise1
+{
+	grid-area: advertise1;
+}
+
+.shout-container
+{
+	
+	grid-template-areas: "memhead";
+	text-decoration: none;
+	list-style: none;
+	gap: 10px;
+	margin: 5px;
+	padding: 20px;
+}
 
 	.grid-container
 	{
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-		grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-		/* Adjust column width as needed */
 		gap: 15px;
 		text-decoration: none;
 		list-style: none;
@@ -200,7 +283,14 @@
 	{
 		grid-column: 3;
 		color: white;
+	border-right: #aaa solid 1px;
+
 	}
+
+.projBy p:last-child
+{
+	border-bottom: #aaa solid 0px;
+}
 
 	.copy-dates p
 	{

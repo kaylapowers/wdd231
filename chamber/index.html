@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Kayla Powers">
+	<meta name="description"
+		content="Eagle City, Chamber of Commerce,chamber, keynote, Network, Business Support, Economic Development, Community Support, Idaho, Boise">
+	<meta property="title" content="Eagle City Chamber of Commerce Home Page">
+
+	<!--*********************Styles and icons*************************************-->
+	<link rel="stylesheet" href="styles/normalize.css">
+	<link rel="stylesheet" href="styles/getweather.css">
+
+	<link rel="stylesheet" href="styles/base.css">
+	<link rel="stylesheet" href="styles/large.css">
+
+	<link rel="icon" href="favicon.ico">
+	<!--*********************facebook meta *************************************-->
+
+	<meta property="og:title" content="Eagle City Chamber of Commerce Business Home Page">
+	<meta property="og:url" content="https://kaylapowers.github.io/wdd231/chamber/index.html">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Eagle City Chamber of Commerce">
+	<meta property="og:description"
+		content="Eagle City Chamber of Commerce web site. Economic Development, Community Support, Idaho, Boise">
+	<meta property="og:image" content="https://github.com/kaylapowers/wdd231/chamber/images/chamber-facebook.webp">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:image:alt" content="Eagle City Chamber of Commerce Website">
+	<!--*********************Google Fonts*************************************-->
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Merriweather:ital,opsz,wdth,wght@0,18..144,112,300..900;1,18..144,112,300..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+	<!--*********************Scripts *************************************-->
+	<!-- turn off breadcrumbs for home index 
+	<script src="scripts/breadcrumbs.js" defer></script> -->
+	<script src="scripts/date.js" defer></script>
+	<script src="scripts/navigation.js" defer></script>
+	<script src="scripts/memberShout.js" defer></script>
+	<script src="scripts/getWeather.js" defer></script>
+
+</head>
+<!--*********************Body*************************************-->
+
+<body>
+	<!--*********************Header- on every page***********************************-->
+	<header>
+		<div class="logohead-grid-container">
+			<div class="logo-area">
+
+				<img src="images/eagle-logo.webp" alt="Site Logo" width="50" height="50">
+			</div>
+
+			<div class="heading-area">Welcome To Eagle City Chamber of Commerce</div>
+
+			<!--*********************Navigation*************************************-->
+			<div class="hamburger-area">
+				<button class="hamburger" aria-label="menu" id="hamb-btn"></button>
+			</div>
+		</div>
+		<!--**************navigation menu ************-->
+
+		<div class="menu-grid-container">
+			<nav class="navigation" id="nav-bar">
+				<ul>
+					<li><a href="discover.html">Discover</a></li>
+					<li><a href="directory.html">Directory</a></li>
+					<li><a href="join.html">Join</a></li>
+					<li class="active"><a href="#">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!--**************Main- ************-->
+	<main>
+		<!--*********************Breadcrumb-Nav*************************************-->
+		<div class="breadcrumb-area">
+			<nav aria-label="navigation" class="breadcrumb">
+				<ol>
+					<li id="breadcrumb" aria-label="breadcrumb">
+					</li>
+				</ol>
+			</nav>
+		</div>
+
+		<div class="hero-section">
+			<div class="hero-content">
+				<h1 class="page-title">HOME PAGE</h1>
+				<p class="hero-para">All new members receive an entry for a Community Gift Basket</p>
+				<button class="heroButton button" id="joinBtn" aria-label="Join Eagle City Chamber of Commerce">JOIN
+					CHAMBER</button>
+			</div>
+		</div>
+
+		<!--**************Main-Content ************-->
+
+		<section class="main-content">
+
+			<section class="events">
+				<h2>Events</h2>
+
+				<div class="seminars">
+					<h3>Seminars</h3>
+
+			<div><a class="imageright"><img src="images/event1.webp" height="169" width="300"alt="NEW CLASS: It's Not Done 'Till The Paperwork Is Dry"></a>
+			<p class="caption">Jan 31, 2025 -- NEW CLASS: It's Not Done 'Till The Paperwork Is Dry</p>
+							<div>
+							<a class="imageleft"><img src="images/classes1.webp" height="200" width="300"
+alt="Web Development 101"></a>
+								<p class="caption">Feb 18, 2025 -- Web Development 101</p>
+						</div>
+					</div>
+					<!--**************seminars ************-->
+<div class="networkgrid">
+	<h3>Business Networking</h3>
+
+	<div class="network1"><a><img src="images/breakfast1.webp" height="169" width="300"
+				alt="Breakfast with Partners"></a>
+		<p class="caption1">Breakfast With Partners</p>
+	</div>
+
+	<div class="captionpara">
+		<p class="caption1p">Network with fellow business owners, professionals, and potential workers at
+			our monthly breakfast update!</p>
+
+
+		<div class="advertise1">
+			<a class="adpic1"><img src="images/joniesbakery.webp" height="169" width="300" alt="Jonies Bakery">
+		</div>
+
+
+		<p class="adcaption1">Jonies Bakery</p>
+		<p class="adpara1">Jonie is up way before sunrise to bake wonderful goodies to start your day with.
+			Great coffee and pastry till 3PM.</p>
+
+
+	</div>
+	<!--**************network ************-->
+
+
+			</section> <!--**************events ************-->
+			<!--**************weather ************-->
+<aside class="weather">
+	<h2>Weather for <span id="city"></span></h2>
+	<div class="ccard">
+		<h3>Current Weather</h3>
+
+		<h4>Current as of: <span id="dateTime" class="dateTime"></span></h4>
+
+		<figure>
+			<img id="weatherIcon" class="weatherIconC" src="" alt="">
+			<figcaption></figcaption>
+		</figure>
+		<p>Weather Description: <span id="description" class="description"></span></p>
+		<p>Temperature: <span id="temperature" class="temperature"></span>°
+			F</p>
+		<p>Low Temperature today: <span id="lowTempDiv" class="temperature"></span>°
+		<p>High Temperature today: <span id="highTempDiv" class="temperature"></span>°
+
+
+		<p>Sunrise is: <span id="sunrise"></span></p>
+		<p>Sunset is: <span id="sunset"></span></p>
+	</div>
+
+	<div class="forcastContainer">
+		<h2>3 Day Forcast</h2>
+
+		<!--******zero*****-->
+		<div class="fcard">
+			<h3>Forecast Date: <span id="dateTimef" class="dateTimef"></span></h3>
+
+			<figure>
+				<img id="weatherIconf" src="" alt="">
+				<figcaption></figcaption>
+			</figure>
+			<p>Weather Description: <span id="descriptionf" class="description"></span></p>
+			<p>Temperature: <span id="temperaturef" class="temperature"></span>°
+				F</p>
+			<p>Low Temperature today: <span id="lowTempDivf" class="temperature"></span>°
+			<p>High Temperature today: <span id="highTempDivf" class="temperature"></span>°
+
+		</div>
+
+		<!--******one*****-->
+		<div class="fcard">
+			<h3>Forecast Date: <span id="dateTimef1" class="dateTimef"></span></h3>
+
+			<figure>
+				<img id="weatherIconf1" src="" alt="">
+				<figcaption></figcaption>
+			</figure>
+			<p>Weather Description: <span id="descriptionf1" class="description"></span></p>
+			<p>Temperature: <span id="temperaturef1" class="temperature"></span>°
+				F</p>
+			<p>Low Temperature today: <span id="lowTempDivf1" class="temperature"></span>°
+			<p>High Temperature today: <span id="highTempDivf1" class="temperature"></span>°
+
+		</div>
+
+
+		<!--******two*****-->
+		<div class="fcard">
+			<h3>Forecast Date: <span id="dateTimef2" class="dateTimef"></span></h3>
+
+			<figure>
+				<img id="weatherIconf2" src="" alt="">
+				<figcaption></figcaption>
+			</figure>
+			<p>Weather Description: <span id="descriptionf2" class="description"></span></p>
+			<p>Temperature: <span id="temperaturef2" class="temperature"></span>°F</p>
+			<p>Low Temperature today: <span id="lowTempDivf2" class="temperature"></span>°</p>
+			<p>High Temperature today: <span id="highTempDivf2" class="temperature"></span>°</p>
+		</div>
+	</div>
+</aside>
+
+
+			
+			<!--**************weather ************-->
+
+			
+		</section> <!--**** main-content ******-->
+		<section class="memberSO">
+			<h2 class="mem-head">Member Business Shout-Outs:</h2>
+<!--*********member shout out mrmberShout.js***************-->
+			<div id="memberSO-card-container" class="grid-item">
+			
+				<div id="membHeading" class="membHead">
+				
+				<div id="membIcon" class="membImage">
+				</div>
+				<div id="soContentArea" class="soContent">
+			
+				</div>
+
+				<!-- <div class='grid-item'> 
+			//inner-HTML
+			<h3>${member.businessName}</h3>
+			<p>${member.imageName}</p>
+			
+			<p class='caption'> ${member.caption}</p>
+			<p class='address'> ${member.street}</p>
+			<p class='address'> ${member.city}, ${member.state} ${member.zipcode}</p>
+			
+			<p class="phone">${member.phoneNumber}</p>
+			<p class="email">${member.email}</p>
+			<p class='url'>${member.webUrl}</p>
+		</div>
+		-->
+			</div>
+
+		</section>
+
+	</main>
+
+	<!--**************footer************-->
+	<footer class="footer-container">
+
+		<!--**************footer social links************-->
+		<div class="chamberContact">
+			<p>148 N 2nd St</p>
+			<p> Eagle, ID 83616</p>
+			<p>(208) 939-4222 </p>
+		</div>
+
+		<span class="socialLinks">
+			<a href="https://www.LinkedIn.com" target="blank"><img src="images/linkedin-icon1.svg" width="45"
+					height="45" alt="LinkedIn Icon"></a>
+			<!--twitter X-->
+			<a href="https://www.twitter.com" target="blank"><img src="images/twitter-logo1.svg" width="45" height="45"
+					alt="twitter-X"></a>
+			<!--YouTube-->
+
+			<a href="https://www.youtube.com" target="blank"><img src="images/youtube-logo1.svg" width="45" height="45"
+					alt="youTube"></a>
+		</span>
+
+		<div class="projBy">
+			<p>Class project</p>
+			<p>WDD231 Chamber</p>
+		</div>
+
+		<div class="copy-dates">
+			<p>Copyright: <span id="copyright-year"></span>
+			<p>Kayla Powers 👉Idaho USA</p>
+			<p>Last Modified on: <span id="last-modified"></span></p>
+		</div>
+
+	</footer>
+</body>
+
+</html>

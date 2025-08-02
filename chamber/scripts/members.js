@@ -32,9 +32,12 @@ document.addEventListener('DOMContentLoaded', () => { // Ensure DOM is loaded
 			gridItem.classList.add('grid-item');
 			gridItem.innerHTML = `
 				<h2>${member.businessName}</h2>
+
 				<p>${member.imageName}</p>
+				<p>╔══❖═══════❖══╗</p>
 
 				<p class='caption'> ${member.caption}</p>
+
 				<p class='address'> ${member.street}</p>
 				<p class='address'> ${member.city}, ${member.state} ${member.zipcode}</p>
 			
@@ -60,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => { // Ensure DOM is loaded
             	<h4>${member.businessName}</h4>
 				<p>${member.imageName}</p>
 
-				<p class='caption'> ${member.caption}</p>
+				<p class='listcaption'> ${member.caption}</p>
 				<p class='address'> ${member.street}</p>
 				<p class='address'> ${member.city}, ${member.state} ${member.zipcode}</p>
 			
