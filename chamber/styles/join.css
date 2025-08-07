@@ -1,0 +1,355 @@
+/*media Query for small screen*/
+
+@media only screen and (max-width: 400px)
+{
+	h1
+	{
+		text-align: center;
+		width: 100%;
+	}
+
+	.main-container
+	{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-areas: "JU-h1"
+		"form-wrapper"
+		"member-container";
+		gap: 10px;
+		width: 100%;
+	}
+
+	.form
+	{
+		padding: 20px;
+	}
+
+}
+
+
+/* medium screen 321-767 px */
+
+@media only screen and (max-width: 767px)
+{
+
+	.navigation a
+	{
+		font-size: smaller;
+	}
+
+	.main-container
+	{
+		display: grid;
+		width: 100%;
+
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"JU-h1"
+			"form-wrapper"
+			"member-container";
+	}
+
+
+
+}
+
+/* Larger screens: Display cards to the right of the form */
+
+@media screen and (min-width: 768px)
+{
+	.main-container
+	{
+		display: grid;
+		grid-template-columns: minmax(100px, 1.5fr) minmax(100px, .75fr);
+		margin: 0;
+		grid-template-areas:
+			"JU-h1 JU-h1"
+			"form-wrapper member-container";
+
+		justify-content: space-between;
+		gap: 1em;
+
+	}
+
+
+}
+
+/***************end large screen*****************/
+
+
+html
+{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body
+{
+	font-family: sans-serif;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+}
+
+.main
+{
+	display: grid;
+
+}
+
+.main-container
+{
+	background-color: #0d2350;
+
+
+}
+
+/*******************Modal Card********************/
+h1
+{
+	grid-area: JU-h1;
+}
+
+.form-wrapper
+{
+	grid-area: form-wrapper;
+}
+
+form
+{
+	padding: 15px;
+	margin: 20px;
+	border-radius: 5px;
+	background-color: #f5d8a3;
+	border: #0d2350 1px solid;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.headings
+{
+	width: 100%;
+	font-size: 1.2em;
+	border-radius: 5%;
+	margin-bottom: 1em;
+}
+
+.gold
+{
+	background-color: #F2B749;
+}
+
+.silver
+{
+	background-color: #C0C0C0
+}
+
+.bronze
+{
+	background-color: #CE8946;
+}
+
+.nonprofit
+{
+	background-color: #a7a6f0
+}
+
+label
+{
+	display: block;
+	font-size: .8rem;
+	color: #183F8C;
+	padding-top: .2rem;
+}
+
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+select,
+input
+{
+	display: block;
+	margin: .1rem 0 1rem 0;
+	padding: .3rem;
+	border: 1px solid #999;
+	border-radius: 4px;
+	border-left-width: 5px;
+	border-left-color: #555;
+	font-size: 1rem;
+	color: #183F8C;
+	width: 100%;
+}
+
+
+#orgDescription
+{
+
+	width: 100%;
+	margin: 0 auto;
+	/* Centers the container */
+	padding: 20px;
+	box-sizing: border-box;
+	/* Includes padding in the element's total width and height */
+}
+
+input:required
+{
+	border-left-color: #ff0318;
+}
+
+input:focus
+{
+	border-left-color: black;
+	outline: none;
+}
+
+input:required:valid
+{
+	border-left-color: #400106;
+}
+
+input[type=submit]
+{
+	border: none;
+	text-align: center;
+	background-color: #400106;
+	color: white;
+	border-radius: 1rem;
+	padding: .75rem 1.5rem;
+	margin: 2rem 0;
+	font-size: 1.2rem;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+input:-webkit-autofill
+{
+	-webkit-text-fill-color: #3D405B;
+}
+
+
+.membership-cards-container
+{
+	grid: member-container;
+	display: grid;
+	justify-content: space-around;
+	gap: 10px;
+	margin: 1em;
+}
+
+.membership-card
+{
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	background-color: #f5d8a3;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.select-level-button
+{
+	background-color: #0d2350;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal styles */
+.modal
+{
+	display: none;
+	/* Hidden by default */
+	position: fixed;
+	/* Stay in place */
+	z-index: 1001;
+	/* Sit on top */
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+
+	/* Full width */
+	overflow: auto;
+	/* Enable scroll if needed */
+	/*background-color: rgba(0, 0, 0, 0.4);*/
+	background-color: rgba(112, 87, 87, 0.4);
+	/* Black w/ opacity */
+	opacity: 0;
+	/* Initial opacity for fade-in */
+	transition: opacity 3.5s ease-in-out;
+	/* Fade transition */
+	transform: translate(-10%, 1%);
+}
+
+.modal.show
+{
+	display: block;
+	opacity: 1;
+}
+
+.modal-content
+{
+	background-color: #96D2D9;
+	margin: 15% auto;
+	/* 15% from the top and centered */
+	border: 1px solid #888;
+	width: 80%;
+	padding: 20px;
+	/* Could be more or less, depending on screen size */
+	border-radius: 8px;
+	position: relative;
+	transform: scale(0.8);
+	/* Start smaller */
+	transition: transform 0.3s ease-in-out;
+
+}
+
+.modal-content h2
+{
+	color: #400106;
+}
+
+.close-button
+{
+	color: #090909;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+	min-width: 45px;
+	min-height: 45px;
+}
+
+.close-button:hover,
+.close-button:focus
+{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-confirm-button
+{
+	background-color: #400106;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 15px;
+}
+
+
+
+
+/********modal*********************/
