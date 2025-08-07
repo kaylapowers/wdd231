@@ -1,5 +1,6 @@
 // breadcrumbs.js
 // Function to generate breadcrumbs dynamically
+
 function generateBreadcrumbs(path) {
 	const breadcrumbList = document.getElementById('breadcrumb');
 	breadcrumbList.innerHTML = ''; // Clear existing breadcrumbs
@@ -10,7 +11,7 @@ function generateBreadcrumbs(path) {
 	homeItem.innerHTML = '<a href="/">Home</a>';
 	breadcrumbList.appendChild(homeItem);
 
-	const pathParts = path.split('/').filter(part => part !== ''); // Remove empty strings
+	const pathParts = path.split('/').filter(part => part !== '' && part.endsWith(".html")); // Remove empty strings
 
 	let currentPath = '';
 	for (let i = 0; i < pathParts.length; i++) {
