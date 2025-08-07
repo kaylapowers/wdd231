@@ -105,6 +105,25 @@ body
 
 }
 
+.membership-cards-container
+{
+	grid-area: member-container;
+	display: grid;
+	justify-content: space-around;
+	gap: 10px;
+	margin: 1em;
+}
+
+.membership-card
+{
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	text-align: center;
+	width: 100%;
+	background-color: #f5d8a3;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
 /*******************Modal Card********************/
 h1
 {
@@ -229,26 +248,6 @@ input:-webkit-autofill
 	-webkit-text-fill-color: #3D405B;
 }
 
-
-.membership-cards-container
-{
-	grid: member-container;
-	display: grid;
-	justify-content: space-around;
-	gap: 10px;
-	margin: 1em;
-}
-
-.membership-card
-{
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 20px;
-	text-align: center;
-	width: 100%;
-	background-color: #f5d8a3;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-}
 
 
 

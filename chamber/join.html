@@ -95,14 +95,14 @@
 
 			<!--***************Join Form********-->
 			<div class="form-wrapper">
-				<form method="GET" action="thankyou.html" method="get">
+				<form method="get" action="thankyou.html">
 
 					<label for="firstname">First Name:</label><br>
-					<input type="text" id="firstname" name="firstname" title="First Name" autocomplete="first-name"
+					<input type="text" id="firstname" name="firstname" title="First Name" autocomplete="given-name"
 						aria-required required>
 
 					<label for="lastname">Last Name:</label><br>
-					<input type="text" id="lasttname" name="lastname" title="Last Name" autocomplete="family-name"
+					<input type="text" id="lastname" name="lastname" title="Last Name" autocomplete="family-name"
 						aria-required required>
 
 					<label for="org-title">Title:</label><br>
@@ -115,15 +115,15 @@
 						title="email" aria-required required><br>
 
 					<label for="phone">Mobile Phone Number:</label>
-					<input type="tel" id="phone" name="phone" V autocomplete="tel" required aria-required title="phone">
+					<input type="tel" id="phone" name="phone" autocomplete="tel" required aria-required title="phone">
 
 					<label for="organization">Organization Name:</label>
 					<input type="text" id="organization" name="organization" title="Organization Name"
 						autocomplete="organization" aria-required required>
 
 					<label for="membershipLevel">Membership Level:</label>
-					<select id="membershipLevel" name="membershipLevel" title="membershipLevel" aria-required required>
-						<option value="nonprofit">NP Membership (Non-profit)</option>
+					<select id="membershipLevel" name="membershipLevel" title="membershipLevel" size="4" aria-required  required>
+						<option value="nonprofit">Nonprofit Membership</option>
 						<option value="bronze">Bronze Membership</option>
 						<option value="silver">Silver Membership</option>
 						<option value="gold">Gold Membership</option>
@@ -138,62 +138,57 @@
 					<input type="submit" value="JOIN US NOW">
 				</form>
 
+			</div>
+			<!--****form-wrapper********-->
+			<!--***************Membership level Modal cards********-->
+
+			<div class="membership-cards-container">
+				<div class="membership-card" data-level="GOLD">
+					<div class="headings gold">
+						<h2 class="gold">GOLD Membership</h2>
+						<p class="gold"> $200 year</p>
+					</div>
+					<p>Access to all benefits of all levels. </p>
+					<button class="select-level-button" data-level="GOLD">Learn More</button>
+				</div>
+
+				<div class="membership-card" data-level="SILVER">
+					<div class="headings">
+						<h2 class="silver">SILVER Membership</h2>
+						<p class="silver">$200 year</p>
+					</div>
+					<p>Bronze level + special programs</p>
+					<button class="select-level-button" data-level="SILVER">Get the Scoop</button>
+				</div>
+
+				<div class="membership-card" data-level="BRONZE">
+					<div class="headings bronze">
+						<h2 class="bronze">BRONZE Membership</h2>
+						<p class="bronze"> $150 year</p>
+					</div>
+					<p>Great Basic Programs and Discounts</p>
+					<button class="select-level-button" data-level="BRONZE">Check it Out</button>
+				</div>
+
+				<div class="membership-card" data-level="NONPROFIT">
+					<div class="headings">
+						<h2 class="nonprofit">NONPROFIT Membership</h2>
+						<p class="nonprofit"> $000 Year- FREE</p>
+					</div>
+					<p>FREE membership and program discounts</p>
+					<button class="select-level-button" data-level="NONPROFIT">Find More</button>
+				</div>
+
+				<div id="membership-modal" class="modal">
+					<div class="modal-content">
+						<span class="close-button">&times;</span>
+						<h2>Benefits for <span id="selected-level"></span> Memberships are:</h2>
+						<p id="modal-description"></p>
+						<button class="modal-confirm-button">CLOSE</button>
+					</div>
+				</div>
+			</div>
 		</div>
-		<!--****--form-wrapper********-->
-		<!--***************Membership level Modal cards********-->
-
-		<div class="membership-cards-container">
-			<div class="membership-card" data-level="GOLD">
-				<div class="headings gold">
-					<h2 class="gold">GOLD Membership</h2>
-					<p class="gold"> $200 year</p>
-				</div>
-				<p>Access to all benefits of all levels. </p>
-				<button class="select-level-button" data-level="GOLD">Learn More</button>
-			</div>
-
-			<div class="membership-card" data-level="SILVER">
-				<div class="headings">
-					<h2 class="silver">SILVER Membership</h2>
-					<p class="silver">$200 year</p>
-				</div>
-				<p>Bronze level + special programs</p>.</p>
-				<button class="select-level-button" data-level="SILVER">Get the Scoop</button>
-			</div>
-
-			<div class="membership-card" data-level="BRONZE">
-				<div class="headings bronze">
-					<h2 class="bronze">BRONZE Membership</h2>
-					<p class="bronze"> $150 year</p>
-				</div>
-				<p>Great Basic Programs and Discounts</p>
-				<button class="select-level-button" data-level="BRONZE">Check it Out</button>
-			</div>
-
-			<div class="membership-card" data-level="NONPROFIT">
-				<div class="headings">
-					<h2 class="nonprofit">NONPROFIT Membership</h2>
-					<p class="nonprofit"> $000 Year- FREE</p>
-				</div>
-				<p>FREE membership and program discounts</p>
-				<button class="select-level-button" data-level="NONPROFIT">Find More</button>
-			</div>
-		</div>
-
-		<div id="membership-modal" class="modal">
-			<div class="modal-content">
-				<span class="close-button">&times;</span>
-				<h2>Benefits for <span id="selected-level"></span> Memberships are:</h2>
-				<p id="modal-description"></p>
-				<button class="modal-confirm-button">CLOSE</button>
-			</div>
-		</div>
-
-
-
-
-
-
 	</main>
 
 	<!--**************footer************-->
