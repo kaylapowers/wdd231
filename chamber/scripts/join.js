@@ -7,6 +7,8 @@ const levelBenefits = [
 let index = 3;
 
 
+
+
 document.addEventListener('DOMContentLoaded', function () {
 	// Get the hidden input field
 	const timestampInput = document.getElementById('submissionTimestamp');
@@ -18,9 +20,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		timestampInput.value = new Date().toISOString(); // ISO 8601 format
 	}
 
-const myInfo = new URLSearchParams(window.location.search);
+	const myInfo = new URLSearchParams(window.location.search);
 
-document.querySelector('#thanks').innerHTML = `
+	document.querySelector('#thanks').innerHTML = `
 <div class="greet">
 <p></p> 
 <h2 class='welcomehead'>Congratulations!!   ${myInfo.get('org-title')}  ${myInfo.get('firstname')}  ${myInfo.get('lastname')} of ${myInfo.get('organization')}<h2>
@@ -34,7 +36,7 @@ document.querySelector('#thanks').innerHTML = `
 <p>Check your email: ${myInfo.get('email')} for further Data</p>
 <p> Your mobile number is ${myInfo.get('phone')}</p>
 <p>Your join date is ${myInfo.get('submissionTimestamp')} </p`;
-console.log(myInfo);
+	console.log(myInfo);
 });
 
 
@@ -96,6 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
 			outputContainer.appendChild(p); // Append it to the container
 		});
 	}
+	const organizationInput = document.getElementById('org-title');
+	organizationInput.addEventListener('input', () => {
+		if (organizationInput.value.length < 7) {
+			// Display an error message or style the input
+			organizationInput.style.borderColor = 'red';
+		} else {
+			organizationInput.style.borderColor = 'green';
+		}
+	});
 
 });
 
