@@ -26,7 +26,7 @@
 .disc-aside h2
 {
 	min-height: 30px;
-		line-height: 30px;
+	line-height: 30px;
 	text-align: center;
 	font-family: "roboto", sans-serif;
 	background-color: #0d2350;
@@ -35,7 +35,7 @@
 
 .disc-aside p
 {
-	color: blue;
+	color: rgb(48, 3, 16);
 }
 
 .disc-fig
