@@ -138,7 +138,7 @@ header
 .logoimg
 {
 	grid-area: logo;
-	width: 100%;
+	max-width: 100%;
 	margin: 0;
 	padding: 10px;
 	width: 75px;
@@ -243,7 +243,7 @@ button
 	justify-content: center;
 	padding: 4px;
 	margin: 5px;
-	max-width: 75px;
+	max-width: 120px;
 	min-width: 45px;
 	min-height: 45px;
 	background-color: #183F8C;
@@ -258,6 +258,11 @@ button:hover
 }
 
 /************HOME PAGE********/
+img
+{
+	max-width: 100%;
+	height: auto;
+}
 
 main
 {

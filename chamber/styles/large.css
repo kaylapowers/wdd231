@@ -20,13 +20,15 @@
 
 	.image-card
 	{
-		width: 95%;
+		height: auto;
+		margin: 5px;
+		width: 98%;
 		border: 1px solid #828282;
 	}
 
 	figure
 	{
-		height: 100%;
+		width:100%;
 	}
 
 	/***********discover page images*********/

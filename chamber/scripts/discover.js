@@ -20,7 +20,7 @@ function displayItems(data) {
 		gridItem.classList.add('image-card');
 		gridItem.innerHTML = `
 			
-			<div class="disc-fig"><figure><figcaption class="thecaption"><h2>${data[i].name}<h2></figcaption><img class='discover-image' src='images/${data[i].src}' alt='${data[i].name}'></figure></div>
+			<div class="disc-fig"><figure><figcaption class="thecaption"><h2>${data[i].name}</h2></figcaption><img class='discover-image' src='images/${data[i].src}' alt='${data[i].name}' width="300" height="200" loading="lazy"></figure></div>
 
 			<p class='discover-description'>${data[i].description}</p>
 			<p class='address'>${data[i].address}</p>
@@ -44,45 +44,7 @@ function displayItems(data) {
 	}
 };
 
-/*
-function setVisitDate() {
 
-// Check if localStorage is supported by the browser
-if (typeof (Storage) !== "undefined") {
-	// Get the current date and time
-	const now = new Date();
-
-	// Convert the date to a string or timestamp for storage
-	// Using toISOString() for a consistent string format
-	const visitDateString = now.toISOString();
-
-	// Store the visit date in localStorage
-	localStorage.setItem("lastPageVisit", visitDateString);
-
-	// Example of retrieving and comparing the date (optional)
-	const storedVisitDate = localStorage.getItem("lastPageVisit");
-	if (storedVisitDate) {
-		const previousVisit = new Date(storedVisitDate);
-		console.log("Last visit was on:", previousVisit.toLocaleString());
-		console.log("Current visit is on:", now.toLocaleString());
-
-		// You can then perform comparisons, e.g., if it's been more than a day
-		const oneDayInMilliseconds = 24 * 60 * 60 * 1000;
-		if (now.getTime() - previousVisit.getTime() > oneDayInMilliseconds) {
-			console.log("It's been more than a day since the last visit!");
-		}
-	}
-} else {
-	console.log("Sorry, your browser does not support Web Storage.");
-}
-	
-
-}
-
-*/
-
-
-/*************two************************/
 
 // Function to set the visit date in local storage
 
@@ -116,39 +78,3 @@ if (!lastVisit) {
 	localStorage.setItem("lastVisit", new Date().toISOString());
 }
 
-/*
-// Function to get and compare the visit date
-function getAndCompareVisitDate() {
-
-	const storedDateString = localStorage.getItem('lastVisitDate');
-	if (!storedDateString)
-
-	if (storedDateString) {
-		const lastVisitDate = new Date(storedDateString);
-		const now = new Date();
-
-		// Example comparison: check if it's a new day since last visit
-		const isNewDay = now.toDateString() !== lastVisitDate.toDateString();
-
-		if (isNewDay) {
-			console.log("Welcome back! It's a new day since your last visit.");
-		} else {
-			console.log("You've visited this page today already.");
-		}
-
-		// You can perform other comparisons here, e.g., time difference
-		const timeDifferenceMs = now.getTime() - lastVisitDate.getTime();
-		console.log(`Time since last visit: ${timeDifferenceMs / (1000 * 60 * 60)} hours`);
-
-	} else {
-		console.log("This is your first visit to this page.");
-	}
-}
-
-// Set the visit date when the page loads
-//setVisitDate();
-
-// Get and compare the visit date after setting it (or on subsequent loads)
-getAndCompareVisitDate();
-*/
-/*************two************************/
