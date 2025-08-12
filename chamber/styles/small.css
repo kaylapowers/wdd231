@@ -1,0 +1,179 @@
+.disc-sidebar h2
+{
+	font-size: 1.5em;
+	color: #0d2350;
+	text-align: center;
+}
+
+
+.disc-sidebar p
+{
+	text-align: center;
+	font-family: "roboto", sans-serif;
+	color: blue;
+}
+
+.image-card
+{
+	border: 1px solid #828282;
+	background-color: rgb(249, 249, 247);
+	text-align: center;
+	display: grid;
+	vertical-align: top;
+	width: 95%;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
+	place-items: center;
+	overflow: hidden;
+	object-fit: cover;
+	padding: 10px;
+	grid-template-areas:
+		"disc-fig"
+		"description"
+		"address"
+		"button";
+
+
+}
+
+.disc-aside
+{
+	text-align: center;
+	font-family: "roboto", sans-serif;
+}
+
+.disc-aside
+{
+	text-align: center;
+}
+
+.disc-aside p
+{
+	color: blue;
+}
+
+.disc-fig
+{
+	grid-area: disc-fig;
+	width: 100%;
+}
+
+.thecaption
+{
+	border: 1px solid #828282;
+	height: auto;
+	overflow: hidden;
+	background-color: #fccb39;
+	width: 100%;
+	color: #0d2350;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.discover-image
+{
+	border: 1px solid #828282;
+	width: 100%;
+}
+
+
+.discover-description
+{
+	grid-area: description;
+	text-align: center;
+	/* Vertical and horizontal padding */
+	/* No border */
+	font-family: "Roboto", serif;
+	/* Font style */
+	font-size: 16px;
+	margin: 5px;
+	padding: 0 2em;
+
+}
+
+.address
+{
+	grid-area: address;
+	text-align: center;
+	padding: .3em;
+	font-family: 'Roboto', sans-serif;
+	/* Font style */
+	font-size: 12px;
+	/* Font size */
+	font-weight: bold;
+	background-color: #ccc;
+	margin: .5rem;
+	max-width: 90%;
+}
+
+.pretty-button
+{
+	grid-area: button;
+	background-color: #400106;
+	min-width: 50px;
+	max-width: 125px;
+	min-height: 50px;
+	/* The element will be at least 50 pixels tall */
+	max-height: 100px;
+	/* The element will not exceed 500 pixels in height */
+	margin-top: 10px;
+	/* Blue background */
+	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
+	color: white;
+	/* White text */
+	padding: .5em .4em;
+	/* Vertical and horizontal padding */
+	border: none;
+	/* No border */
+	border-radius: 5px;
+	/* Slightly rounded corners */
+	font-family: 'Arial', sans-serif;
+	/* Font style */
+	font-size: 16px;
+	/* Font size */
+	font-weight: bold;
+	/* Bold text */
+	text-align: center;
+	/* Center text */
+	place-self: center;
+	text-decoration: none;
+	/* Remove underline for anchor tags */
+	display: inline-block;
+	/* Allows padding and width/height */
+	cursor: pointer;
+	/* Pointer cursor on hover */
+	transition: background-color 0.3s ease, transform 0.1s ease;
+	/* Smooth transition for hover effects */
+}
+
+.pretty-button:hover
+{
+	background-color: #220103;
+	/* Darker blue on hover */
+	transform: translateY(-2px);
+	/* Slight lift effect on hover */
+	/*	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);*/
+	/* Subtle shadow on hover */
+}
+
+.pretty-button:active
+{
+	background-color: #003f80;
+	/* Even darker blue when clicked */
+	transform: translateY(0);
+	/* Reset lift effect */
+	box-shadow: none;
+	/* Remove shadow when clicked */
+}
+
+.image-card
+{
+
+	margin: 1rem 10px;
+	text-align: center;
+	width: 100%;
+	vertical-align: top;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
+
+}

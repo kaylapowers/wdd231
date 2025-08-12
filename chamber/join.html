@@ -106,23 +106,25 @@
 						aria-required required>
 
 					<label for="org-title">Title:</label><br>
-					<input type="text" id="org-title" name="org-title" pattern="^[A-Za-z\\-]+([ ][A-Za-z\\-]+)*{7,}$"
-						title="Please enter your organizational title using only letters, hyphens, and spaces (minimum 7 characters)"
-						aria-required required><br>
+					<input type="text" id="org-title" name="org-title" placeholder="Minimum 7 char (alpha or single space or - )"
+						minlength="7" pattern="^[A-Za-z\\-]+([ ][A-Za-z\\-]){7,}*$"
+						title="Use only letters, hyphens, and spaces (minimum 7 characters)" aria-required required><br>
 
 					<label for="email">Email:</label><br>
 					<input type="email" id="email" name="email" autocomplete="email" placeholder="ImaHere@gmail.com"
 						title="email" aria-required required><br>
 
 					<label for="phone">Mobile Phone Number:</label>
-					<input type="tel" id="phone" name="phone" placeholder="222-222-2222" autocomplete="tel" required aria-required title="phone">
+					<input type="tel" id="phone" name="phone" placeholder="222-222-2222" autocomplete="tel" required
+						aria-required title="phone">
 
 					<label for="organization">Organization Name:</label>
 					<input type="text" id="organization" name="organization" title="Organization Name"
 						autocomplete="organization" aria-required required>
 
 					<label for="membershipLevel">Membership Level:</label>
-					<select id="membershipLevel" name="membershipLevel" title="membershipLevel" size="4" aria-required  required>
+					<select id="membershipLevel" name="membershipLevel" title="membershipLevel" size="4" aria-required
+						required>
 						<option value="nonprofit">Nonprofit Membership</option>
 						<option value="bronze">Bronze Membership</option>
 						<option value="silver">Silver Membership</option>
