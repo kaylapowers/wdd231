@@ -25,7 +25,7 @@
 	.image-card
 	{
 		display: grid;
-		width: 95%;
+		max-width: 90%;
 		place-items: center;
 		grid-template-areas:
 			"disc-fig discover-description"
@@ -69,7 +69,9 @@
 		align-self: center;
 		padding: 5px 10px;
 	}
-	.thecaption:hover {
+
+	.thecaption:hover
+	{
 		background-color: #811741;
 	}
 
@@ -79,7 +81,9 @@
 		border: 1px solid #828282;
 		width: 100%;
 	}
-	.discover-image:hover {
+
+	.discover-image:hover
+	{
 		background-color: #811741;
 	}
 
@@ -122,9 +126,7 @@
 
 	.logo-area
 	{
-		max-width: 75px;
 		grid-area: logo;
-		margin: 15px;
 	}
 
 	.heading-area

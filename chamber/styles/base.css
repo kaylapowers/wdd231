@@ -113,20 +113,28 @@ header
 	width: 100%;
 	background-color: #400106;
 	color: white;
-}
+	transition: width 0.5s ease-in-out;
+	}
 
+
+.heading-area{
+	padding: 8px;
+	transition: width 0.5s ease-in-out;
+}
 .head-menus
 {
 	/*grid-template-columns: 75px 1fr 75px;*/
 
 	background-color: #400106;
 	color: white;
+	transition: width 0.5s ease-in-out;
 
 }
 
 .logohamb-grid-container
 {
 	display: grid;
+	transition: width 0.5s ease-in-out;
 	width: 100%;
 	grid-template-columns: 1fr 1fr;
 	grid-template-areas:
@@ -134,16 +142,20 @@ header
 		"heading heading"
 		"navigation navigation";
 }
-
+.logo-area {
+	padding: 8px;
+		max-width: 75px;
+		min-width: 50px;
+	transition: width 0.5s ease-in-out;
+}
 .logoimg
 {
 	grid-area: logo;
 	max-width: 100%;
-	margin: 0;
 	padding: 10px;
 	width: 75px;
 	height: auto;
-	margin: 5px;
+	transition: width 0.5s ease-in-out;
 }
 
 /************HAMBURGER NAVIGATION********/
@@ -158,6 +170,7 @@ header
 	justify-self: center;
 	font-size: 3em;
 	margin: 5px;
+	transition: width 0.5s ease-in-out;
 
 }
 
@@ -184,6 +197,7 @@ header
 	padding: 1em;
 	width: 100%;
 	background-color: #400106;
+	transition: width 0.5s ease-in-out;
 
 }
 
@@ -204,6 +218,7 @@ header
 	width: 100%;
 	color: white;
 	display: none;
+	transition: width 0.5s ease-in-out;
 }
 
 .navigation li
@@ -262,6 +277,7 @@ img
 {
 	max-width: 100%;
 	height: auto;
+	transition: width 0.5s ease-in-out;
 }
 
 main
@@ -271,6 +287,7 @@ main
 	height: 100%;
 	margin: 0;
 	display: grid;
+	transition: width 0.5s ease-in-out;
 	grid-template-columns: "breadcrumb"
 		"maincontent";
 
@@ -364,7 +381,8 @@ section
 	background-image: url('../images/heroeagle.webp');
 	height: 100vh;
 	width: 100%;
-
+	transition: width 0.5s ease-in-out;
+	transition: height 0.5s ease-in-out;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -405,6 +423,8 @@ section
 	border-radius: 5px;
 	cursor: pointer;
 	font-size: 1em;
+	min-height: 50px;
+	min-width: 50px;
 	margin-right: 50px;
 
 }

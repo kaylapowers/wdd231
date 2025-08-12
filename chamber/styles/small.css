@@ -1,17 +1,4 @@
-.disc-sidebar h2
-{
-	font-size: 1.5em;
-	color: #0d2350;
-	text-align: center;
-}
 
-
-.disc-sidebar p
-{
-	text-align: center;
-	font-family: "roboto", sans-serif;
-	color: blue;
-}
 
 .image-card
 {
@@ -36,15 +23,14 @@
 
 }
 
-.disc-aside
+.disc-aside h2
 {
+	min-height: 30px;
+		line-height: 30px;
 	text-align: center;
 	font-family: "roboto", sans-serif;
-}
-
-.disc-aside
-{
-	text-align: center;
+	background-color: #0d2350;
+	color: white;
 }
 
 .disc-aside p
@@ -61,7 +47,8 @@
 .thecaption
 {
 	border: 1px solid #828282;
-	height: auto;
+	min-height: 20px;
+	line-height: 20px;
 	overflow: hidden;
 	background-color: #fccb39;
 	width: 100%;
