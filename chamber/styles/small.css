@@ -1,12 +1,9 @@
-
-
 .image-card
 {
 	border: 1px solid #828282;
 	background-color: rgb(249, 249, 247);
 	text-align: center;
 	display: grid;
-	vertical-align: top;
 	width: 95%;
 	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
