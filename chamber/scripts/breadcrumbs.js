@@ -1,6 +1,44 @@
 // breadcrumbs.js
-// Function to generate breadcrumbs dynamically
 
+document.addEventListener('DOMContentLoaded', function () {
+	const breadcrumbList = document.getElementById('breadcrumb-list');
+	const pathNames = window.location.pathname.split('/').filter(path => path);
+
+	// Add "Home" as the first breadcrumb
+	const homeItem = document.createElement('li');
+	const homeLink = document.createElement('a');
+	homeLink.href = '/';
+	homeLink.textContent = 'Home';
+	homeItem.appendChild(homeLink);
+	breadcrumbList.appendChild(homeItem);
+
+	// Generate breadcrumbs from the URL path
+	let currentPath = '';
+	pathNames.forEach((item, index) => {
+		currentPath += `/${item}`;
+		const listItem = document.createElement('li');
+		const link = document.createElement('a');
+
+		link.href = currentPath;
+		// Capitalize the first letter of each breadcrumb item
+		link.textContent = item.charAt(0).toUpperCase() + item.slice(1).replace(/-/g, ' ');
+
+		listItem.appendChild(link);
+
+		if (index === pathNames.length - 1) {
+			listItem.classList.add('current-page'); // Highlight the current page
+		}
+		breadcrumbList.appendChild(listItem);
+	});
+});
+
+
+
+
+
+
+
+/*
 function generateBreadcrumbs(path) {
 	const breadcrumbList = document.getElementById('breadcrumb');
 	breadcrumbList.innerHTML = ''; // Clear existing breadcrumbs
@@ -45,3 +83,4 @@ if (window.location.pathname.includes('discover')) {
 if (window.location.pathname.includes('join')) {
 	generateBreadcrumbs(window.location.pathname);
 }
+*/
