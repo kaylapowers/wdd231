@@ -1,0 +1,199 @@
+/* medium screen 321-767 px */
+/*608px*/
+
+@media only screen and (min-width: 38rem)
+{
+
+
+	
+	*
+	{
+		text-align: center;
+		font-family: "roboto", sans-serif;
+	}
+
+
+	.indx-aside p
+	{
+		color: white;
+	}
+
+	/*
+	.image-card
+	{
+		display: grid;
+		max-width: 90%;
+		place-items: center;
+		
+		border: 1px solid #828282;
+		border-radius: 8px;
+		box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
+		font-size: 18px;
+	}
+*/
+	.pretty-button
+	{
+		grid-area: button;
+		align-self: center;
+	}
+
+	
+
+	/**************  DISCOVER AREA *****************/
+	/**************  HEADER *****************/
+
+
+	.logohead-grid-container
+	{
+		grid-template-columns: 80px 1fr;
+		display: grid;
+		align-items-center;
+		grid-template-areas:
+			"logo heading"
+			"navigation navigation";
+
+	}
+
+	.hamburger
+	{
+		display: none;
+	}
+
+	.logo-area
+	{
+		grid-area: logo;
+	}
+
+	.heading-area
+	{
+		grid-area: heading;
+		text-align: center;
+
+
+	}
+
+	#nav-bar
+	{
+		grid-area: navigation;
+		display: block;
+	}
+
+	.navigation ul
+	{
+		display: flex;
+		justify-content: space-between;
+	
+	}
+
+	.navigation li
+	{
+		border: none;
+	}
+
+	.navigation li:last-child
+	{
+		border: none;
+	}
+
+	.navigation a
+	{
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+		padding: 2px;
+		max-width: 50px;
+		font-size: 15px;
+		text-align: center;
+
+	}
+
+	.hamburger
+	{
+		display: none;
+
+	}
+/*
+	.lst-grd
+	{
+		list-style: none;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		list-style-type: none;
+		padding: 0;
+	}
+
+*/
+footer
+{
+	display: grid;
+	background-color: #400106;
+	color: white;
+	grid-template-areas:
+		"projBy copydates vcontact socialLinks"
+	;
+	justify-content: center;
+	place-items: center;
+	gap: 5px;
+	text-align: center;
+}
+
+.projBy2 p
+{
+	grid-area: vcontact;
+	color: white;
+
+}
+
+.socialLinks
+{
+	grid-area: socialLinks;
+	display: flex;
+	flex-direction: row;
+	padding: 0 20px;
+	margin: 5px;
+	align-items: center;
+}
+
+.socialLinks a
+{
+
+	width: 40px;
+	height: 40px;
+	border: darkgrey solid 1px;
+	border-radius: 4px;
+	background-Color: white;
+	margin: 5px;
+
+}
+
+.socialLinks img
+{
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+}
+
+.socialLinks a:hover
+{
+	background-color: #620c4146;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.projBy p
+{
+	grid-area: projBy;
+	color: white;
+	border-right: #aaa solid 1px;
+
+}
+
+.projBy p:last-child
+{
+	border-bottom: #aaa solid 0px;
+}
+
+.copy-dates p
+{
+	grid-area: copydates;
+	color: white;
+}}

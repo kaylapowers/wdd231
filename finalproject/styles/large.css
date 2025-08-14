@@ -1,0 +1,247 @@
+/* Larger screens: Display cards to the right of the form */
+/*960-1024px*/
+/*media Query for large screen*/
+
+@media only screen and (min-width: 53rem)
+{
+
+
+/*
+	#discover-grid-container
+	{
+		display: grid;
+		border: 1px solid #828282;
+		gap: 8px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.image-card
+	{
+		height: auto;
+		margin: 5px;
+		width: 98%;
+		border: 1px solid #828282;
+	}
+
+	figure
+	{
+		width:100%;
+	}*/
+	/***********discover page images*********/
+
+
+	h1
+	{
+		font-size: 1em;
+	}
+
+	h2
+	{
+		font-size: 1.4em;
+	}
+
+	h3
+	{
+		font-size: 1em;
+	}
+
+	h4
+	{
+		font-size: 1.4em;
+	}
+
+	p
+	{
+		font-size: larger;
+	}
+
+	/*
+	.main-content
+	{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		grid-template-areas:
+			"eventhead areaweath"
+			"seminarhead  current-weather"
+			"seminars   forcast-weather"
+			"networkgrid networkgrid";
+
+		grid-gap: 15px;
+		text-align: left;
+	}
+
+	.events h2
+	{
+		grid-area: eventhead;
+
+	}
+
+	.weather h2
+	{
+		grid-area: areaweather;
+	}
+
+	.currWeath h3
+	{
+		grid-area: cur-weath-head;
+	}
+
+	.currWeath
+	{
+		grid-area: cur-weath;
+	}
+
+	.weathForcast h3
+	{
+		grid-area: forcst-head;
+	}
+
+	.weathForcast
+	{
+		grid-area: forcast;
+	}
+
+	.seminars h3
+	{
+		grid-area: seminarhead;
+		margin: 5px 0;
+	}
+
+
+	.seminars
+	{
+		grid-area: seminars;
+		margin: auto;
+	}
+
+	.networkgrid
+	{
+		grid-area: networkgrid;
+		display: grid;
+		grid-template-columns: .5fr 2fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "networkhead networkhead"
+			"networkevent1 .caption1p"
+			"advertise1 ."
+			". image2 ";
+		margin: 15px;
+		gap: 15px;
+	}
+
+	.network h3
+	{
+		grid-area: networkhead;
+		width: 100%;
+	}
+
+	.caption1
+	{
+		color: black;
+		font-style: italic;
+		font-weight: 900;
+	}
+
+	.netevent1
+	{
+		grid-area: networkevent1;
+		width: 100%;
+
+	}
+
+	.advertise1
+	{
+		grid-area: advertise1;
+	}
+
+	.shout-container
+	{
+
+		grid-template-areas: "memhead";
+		text-decoration: none;
+		list-style: none;
+		gap: 10px;
+		margin: 5px;
+		padding: 20px;
+	}
+
+	
+
+.lst-grd
+{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+}
+
+*/
+/*
+footer
+{
+	grid-template-columns: .8fr .7fr .75fr 1.5fr;
+}
+
+.chamberContact p
+{
+	grid-column: 1;
+	color: white;
+}
+
+.socialLinks
+{
+	grid-column: 2;
+	display: flex;
+	flex-direction: row;
+	padding: 0 20px;
+	margin: 5px;
+	align-items: center;
+}
+
+.socialLinks a
+{
+
+	width: 40px;
+	height: 40px;
+	border: darkgrey solid 1px;
+	border-radius: 4px;
+	background-Color: white;
+	margin: 5px;
+
+}
+
+.socialLinks img
+{
+	width: 100%;
+	height: 100%;
+	margin-right: 5px;
+}
+
+.socialLinks a:hover
+{
+	background-color: #620c4146;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.projBy p
+{
+	grid-column: 3;
+	color: white;
+	border-right: #aaa solid 1px;
+
+}
+
+.projBy p:last-child
+{
+	border-bottom: #aaa solid 0px;
+}
+
+.copy-dates p
+{
+	grid-column: 4;
+	color: white;
+}
+*/
+}

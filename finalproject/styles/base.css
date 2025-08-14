@@ -254,14 +254,17 @@ header
 	font-size: larger;
 	color: #183F8C;
 }
-.pageh2 {
+
+.pageh2
+{
 	background-color: #F2B749;
 	border: #aaa solid 1px;
 	min-height: 30px;
 	align-items: center;
 	padding-top: 5px;
-	
+
 }
+
 .info-pageh2
 {
 	background-color: #183F8C;
@@ -272,6 +275,7 @@ header
 	padding-top: 8px;
 
 }
+
 .navigation
 {
 	grid-area: navigation;
@@ -362,6 +366,7 @@ img
 	max-width: 500px;
 	margin: 0 auto;
 }
+
 form p
 {
 	margin-bottom: 15px;
@@ -374,9 +379,12 @@ label
 	color: #555;
 	margin-bottom: 10px;
 }
-input {
+
+input
+{
 	background-color: rgb(254, 218, 170);
 }
+
 .current,
 .active
 {
@@ -539,7 +547,9 @@ article
 	margin-top: 0;
 	margin-bottom: 10px;
 }
-.indx-aside {
+
+.indx-aside
+{
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -719,7 +729,7 @@ article
 	grid-template-areas:
 		"thecaption thedescription "
 		"theimage  button ";
- border-radius: 8px;
+	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(32, 4, 62, 0.5);
 	font-size: 18px;
 }
@@ -951,9 +961,12 @@ footer
 	cursor: pointer;
 	transition: transform 0.2s ease-in-out;
 }
-#modal-title {
-color: white;
+
+#modal-title
+{
+	color: white;
 }
+
 .card:hover
 {
 	transform: translateY(-5px);
@@ -971,6 +984,7 @@ color: white;
 	color: #666;
 	font-size: 0.9em;
 }
+
 .grid-item
 {
 	border: 1px solid #d9c6c6;
@@ -1027,6 +1041,7 @@ color: white;
 	text-decoration: none;
 	cursor: pointer;
 }
+
 /*old modal card styling******************/
 /*
 .card-container
